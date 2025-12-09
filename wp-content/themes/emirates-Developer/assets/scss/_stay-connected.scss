@@ -4,5 +4,7 @@
     span{ font-weight: 300;}
   }
   h3{  color: #ffffff;  @include px-rem(30); font-weight: 500; line-height: 100%; margin: 0;}
-  p{ color:#fff; font-size: 16px; font-weight: 300;}
+  p{ color:#fff; font-size: 16px; font-weight: 300;
+       @media (max-width: 820px) { font-size: 14px; }
+  }
 }

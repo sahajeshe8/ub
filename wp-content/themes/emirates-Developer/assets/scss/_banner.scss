@@ -4,12 +4,22 @@
 
  .bannerContainer{  height: 100vh; width: 100%; display: flex; flex-wrap: wrap; position: relative; background-size: cover; background-position: center; background-repeat: no-repeat; }
 
- .banner_txt_block_01{ width: 100%; margin-top: auto; padding-bottom: 15px;}
+ .banner_txt_block_01{ width: 100%; margin-top: auto; padding-bottom: 15px; overflow: hidden;}
 
  .banner_content{ max-width: 830px; width: 100%; flex-wrap: wrap; display: flex; padding-bottom: 10vw;
 
-   h3{  font-size: 25px; color: #fff; margin-top: 10px; font-weight: 400; margin-bottom: 0; }
-   h1{ width: 100%;  @include px-rem(60) ;  margin-top: 10px; color: #fff; font-weight:500; margin-bottom: 0; line-height: 110%; }
+   h3{   @include px-rem(25) ; color: #fff; margin-top: 10px; font-weight: 400; margin-bottom: 0; 
+   
+      @media (max-width: 700px) {
+         @include px-rem(55) ; 
+      }
+   
+   }
+   h1{ width: 100%;  @include px-rem(60) ;  margin-top: 10px; color: #fff; font-weight:500; margin-bottom: 0; line-height: 110%;
+      @media (max-width: 700px) {
+         @include px-rem(85) ; 
+      }
+   }
 
 
    .button_wrps{ display: flex; flex-wrap: wrap; gap: 10px; margin-top:30px; }
@@ -30,7 +40,42 @@
    }
 
 
-   .counter_numb{   @include px-rem(40); color: #fff; line-height: 100%; font-weight: 600; margin-bottom: 10px; }
-   p{ margin: 0; @include px-rem(20); color: #fff; font-weight: 400; }
+   .counter_numb{   @include px-rem(40); color: #fff; line-height: 100%; font-weight: 600; margin-bottom: 10px;
+   
+      @media (max-width: 700px) {
+         @include px-rem(70);
+      }
    }
+   p{ margin: 0; @include px-rem(20); color: #fff; font-weight: 400;
+   
+      @media (max-width: 700px) {
+         @include px-rem(35);
+      }
+   }
+
+
+
+
+   @media (max-width: 700px) {
+      width: 50%;
+      
+         }
+
+
+   }
+
+
+
+}
+
+
+
+
+
+
+
+.bannerContainer-inner{ min-height: 621px; align-items: center; background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; }
+.inner_banner_txt_block_01{width: 100%;
+
+h2{ color: #fff; font-weight: 500; margin: 0; @include px-rem(60); line-height: 100%; }
 }

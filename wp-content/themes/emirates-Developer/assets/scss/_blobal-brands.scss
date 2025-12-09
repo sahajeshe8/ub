@@ -1,4 +1,4 @@
- .global_brands_content_title{ display: flex; flex-wrap:wrap; align-items: center; justify-content: space-between; }
+ .global_brands_content_title{ display: flex; flex-wrap:wrap; align-items: center; justify-content: space-between; gap: 15px; }
 
 
  
@@ -52,10 +52,12 @@
 .global_logo_box_wrp{ display: flex; flex-wrap: wrap; align-items: flex-start;   }
 
 .global_logo_box_bottom{ position: absolute; bottom: 0; left: 0; width: calc(100% - 16%); left: 8%; bottom: 8%; right: 8%; z-index: 10;  display: flex; flex-wrap: wrap; align-items: center;
-   h3{ @include px-rem(16); font-weight: 400; color: #fff; line-height: 100%; margin: 0; max-width: 300px;  line-height: 25px;}
+   h3{ font-size: 16px; font-weight: 400; color: #fff; line-height: 100%; margin: 0; max-width: 300px;  line-height: 25px;}
 
    .global_buttion{ width: 40px; height: 40px; background: #fff; display: inline-flex; align-items: center; justify-content: center;
       img{ width: 15px;  }
    }
+
+
 
 }

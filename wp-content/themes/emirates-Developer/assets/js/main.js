@@ -17,7 +17,7 @@ var swiper = new Swiper(".swiper_global_brands", {
 		spaceBetween: 10,
 	  },
 	  768: {
-		slidesPerView: 4,
+		slidesPerView:3,
 		spaceBetween: 15,
 	  },
 	  1024: {
@@ -48,7 +48,7 @@ var swiper = new Swiper(".swiper_global_brands", {
 		spaceBetween: 10,
 	  },
 	  768: {
-		slidesPerView: 4,
+		slidesPerView: 3,
 		spaceBetween: 15,
 	  },
 	  1024: {
@@ -56,6 +56,20 @@ var swiper = new Swiper(".swiper_global_brands", {
 		spaceBetween: 20,
 	  },
 	},
+  });
+
+  var swiper = new Swiper(".swiper_building_trust", {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	autoplay: {
+	  delay: 5000,
+	  disableOnInteraction: false,
+	},
+	loop: true,
   });
 
 
@@ -73,7 +87,7 @@ var swiper = new Swiper(".swiper_global_brands", {
 		spaceBetween: 10,
 	  },
 	  768: {
-		slidesPerView: 4,
+		slidesPerView: 3,
 		spaceBetween: 15,
 	  },
 	  1024: {

@@ -2,6 +2,35 @@ body{
    font-family: 'Poppins', sans-serif;
 }
 
+
+p{ font-weight:400;}
+
+html{
+
+   @media (max-width: 1300px) {
+      font-size: 80%;
+   }
+
+   @media (max-width: 1024px) {
+      font-size: 70%;
+   }
+
+
+   @media (max-width: 768px) {
+      font-size: 55%;
+   }
+
+
+   @media (max-width: 700px) {
+      font-size: 40%;
+   }
+
+
+
+
+
+
+}
 .btn_style{  background: rgba(255, 255, 255, 0.3); border: solid 1px #ffffff; height: 51px; padding: 0 30px; display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; font-size: 16px;  font-weight: 400; color: #ffffff;
    &:hover{ background: rgba(255, 255, 255, 0.8); color: #1d1d1d; }
 
@@ -15,8 +44,19 @@ body{
    &.buttion_blue{ background: #293977; border: solid 1px #ffffff; color: #fff; color: #fff; 
       &:hover{ background: #e4e9ff; color: #000;}
    }
+
+   @media (max-width: 1300px) {
+      padding: 0 20px;
+   }
+
+   @media (max-width: 700px) {
+      height: 40px;
+      padding: 0 20px;
+      font-size: 14px;
+   }
+
 }
-.h3_title{ font-weight: 500; color: #000;  margin: 0;  @include px-rem(70) ;  }
+.h3_title{ font-weight: 500; color: #000;  margin: 0;  @include px-rem(70) ;  line-height: 100%; }
 .innovation_content{ margin-bottom: 30px; }
 .bg_black{ background: #000; }
 

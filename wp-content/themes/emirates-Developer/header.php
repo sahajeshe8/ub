@@ -23,8 +23,8 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header class="header-main header_b" id="header_b">
-    <div class="wrap">
+	<header class="header-main header_b" id="headerMainSection">
+   <div class="wrap">
 
      <div class="header_main_wrapper">
         <div class="logo_desktop text-center d-flex">
@@ -82,11 +82,26 @@
                     </div>
                 </div>
 
- 
-                
             </div>
-    
 
+            <div class="menu_toggle">
+                <button id="menuIcon" class="menu_icon" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div id="mobileMenuOverlay" class="mobile_menu_overlay">
+                <ul class="mobile_menu_list">
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/brands' ) ); ?>">Brands</a></li>
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/products' ) ); ?>">Products</a></li>
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/industries' ) ); ?>">Industries We Serve</a></li>
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/projects' ) ); ?>">Projects</a></li>
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/media-center' ) ); ?>">Media Center</a></li>
+                    <li class="mobile_menu_item"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a></li>
+                </ul>
+            </div>
 
             </div>
 
