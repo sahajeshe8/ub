@@ -1,0 +1,8 @@
+ .stay_connected_txt{ width: 100%; background: rgba(55, 54, 54, 0.3); padding: 8%; border: solid 1px rgba(255, 255, 255, 0.2); border-top: none;
+
+  h4{ color: #ffffff;   @include px-rem(16); font-weight: 400; margin: 0 0 15px 0;
+    span{ font-weight: 300;}
+  }
+  h3{  color: #ffffff;  @include px-rem(30); font-weight: 500; line-height: 100%; margin: 0;}
+  p{ color:#fff; font-size: 16px; font-weight: 300;}
+}

@@ -1,0 +1,21 @@
+.header-main {
+   border-bottom: solid 1px #ffffff40; position: absolute; width:100%; top:0; z-index: 4; padding-top: 25px; padding-bottom: 25px;
+
+
+   .logo_desktop{ width: 221px;}
+}
+
+
+.header_main_wrapper{ display: flex; flex-wrap: wrapl; justify-content: space-between; }
+
+.desk_nav_right { width:calc(79% - 221px);  display: flex; flex-wrap: wrap; }
+
+.menu_right_block{ display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 20px; }
+
+.list-unstyled{ display: flex; flex-wrap:wrap; margin-bottom: 0;}
+
+ 
+.button_link, .list-unstyled li a { color: #fff; font-size: 16px; font-weight: 300;}
+
+.list-unstyled li{ padding: 0 15px;}
+ .navbar{ width: 100%; justify-content: space-between; display: flex; flex-wrap: wrap; align-items: center;}

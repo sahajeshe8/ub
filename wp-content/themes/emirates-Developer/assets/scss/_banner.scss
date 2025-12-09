@@ -1,0 +1,36 @@
+ 
+
+
+
+ .bannerContainer{  height: 100vh; width: 100%; display: flex; flex-wrap: wrap; position: relative; background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+ .banner_txt_block_01{ width: 100%; margin-top: auto; padding-bottom: 15px;}
+
+ .banner_content{ max-width: 830px; width: 100%; flex-wrap: wrap; display: flex; padding-bottom: 10vw;
+
+   h3{  font-size: 25px; color: #fff; margin-top: 10px; font-weight: 400; margin-bottom: 0; }
+   h1{ width: 100%;  @include px-rem(60) ;  margin-top: 10px; color: #fff; font-weight:500; margin-bottom: 0; line-height: 110%; }
+
+
+   .button_wrps{ display: flex; flex-wrap: wrap; gap: 10px; margin-top:30px; }
+
+  
+}
+
+
+.banner_bottom_counter{ margin: 0 -0.8%; padding: 0; display: flex; flex-wrap: wrap; 
+   li{ width: 24%;  padding:0.8%;
+   .counter_box{
+      background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    border: 2px solid #ffffff46;
+    border-radius: 0px;
+    padding: 25px 18px 25px 18px;
+    width: 100%;
+   }
+
+
+   .counter_numb{   @include px-rem(40); color: #fff; line-height: 100%; font-weight: 600; margin-bottom: 10px; }
+   p{ margin: 0; @include px-rem(20); color: #fff; font-weight: 400; }
+   }
+}

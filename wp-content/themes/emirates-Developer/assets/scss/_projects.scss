@@ -1,0 +1,10 @@
+ .projects_home_grid{ display: flex; flex-wrap: wrap; margin: 0 -0.7%; display: flex; flex-wrap: wrap; padding: 0;
+  li{ list-style: none; width: 33.33%; padding: 0 0.7%; display: flex; flex-wrap: wrap;
+  
+  .projects_item_01{ margin-bottom: 20px;}
+  
+  }
+
+
+  & > :nth-child(odd){ flex-direction: column-reverse;}
+}

@@ -1,0 +1,18 @@
+ 
+ .innovative_products_slider{ overflow: hidden; position: relative;
+
+
+   .swiper-slide{ 
+   &::after{ content:""; display:block; width:100%; height: 100%; position: absolute; top: 0; left: 0;  z-index: 5;
+      background: linear-gradient(
+         180deg,
+         rgba(0, 0, 0, 0) 0%,
+         rgba(0, 0, 0, 0.7) 61.12002730369568%
+       );
+   }
+}
+}
+
+ .global_logo_box_bottom{
+   h4{ color: #fff; margin: 0; @include px-rem(30); font-weight: 400; line-height: 100%; margin-bottom: 10px;}
+ }

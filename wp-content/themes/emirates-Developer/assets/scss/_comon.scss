@@ -1,0 +1,41 @@
+body{
+   font-family: 'Poppins', sans-serif;
+}
+
+.btn_style{  background: rgba(255, 255, 255, 0.3); border: solid 1px #ffffff; height: 51px; padding: 0 30px; display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; font-size: 16px;  font-weight: 400; color: #ffffff;
+   &:hover{ background: rgba(255, 255, 255, 0.8); color: #1d1d1d; }
+
+
+
+   &.buttion_white{ background: #fff; border: solid 1px #ffffff; color: #fff; color: #000; 
+      &:hover{ background: #293977; color: #fff;}
+   }
+
+
+   &.buttion_blue{ background: #293977; border: solid 1px #ffffff; color: #fff; color: #fff; 
+      &:hover{ background: #e4e9ff; color: #000;}
+   }
+}
+.h3_title{ font-weight: 500; color: #000;  margin: 0;  @include px-rem(70) ;  }
+.innovation_content{ margin-bottom: 30px; }
+.bg_black{ background: #000; }
+
+.h3_title_55{ font-weight: 500; color: #fff;  margin: 0;  @include px-rem(55) ; line-height: 100%;  }
+
+.bg_shadow{ position: relative; 
+   &::after{   content: ""; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;  z-index: 1; 
+   
+      background: linear-gradient(
+         180deg,
+         rgba(25, 66, 152, 0) 74.27889108657837%,
+         rgba(26, 67, 154, 1) 100%
+       ),
+       linear-gradient(to left, #000000, #000000);
+   }
+
+   .banner_txt_block_01{ position: relative; z-index: 10; }
+}
+
+.text_black{ color: #000;}
+
+.h_100vh{ height: 100vh; }
