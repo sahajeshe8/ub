@@ -24,7 +24,11 @@ get_template_part( 'template-parts/inner-banner' );
 
 
  <?php get_template_part( 'template-parts/our-story' ); ?> 
- <?php get_template_part( 'template-parts/clients' ); ?> 
+ <?php get_template_part( 'template-parts/mission-vission' ); ?> 
+ <?php get_template_part( 'template-parts/history-milestones' ); ?> 
+ <?php get_template_part( 'template-parts/leadership-team' ); ?> 
+  <?php get_template_part( 'template-parts/clients' ); ?> 
+  <?php get_template_part( 'template-parts/global-presence' ); ?> 
 
 
 

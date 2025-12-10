@@ -1,0 +1,22 @@
+ .explore_brands_grid{ margin: 0 -0.5%; padding: 0; display: flex; flex-wrap: wrap;
+  li{ list-style: none; width: 33%; padding: 0 0.5%; margin-bottom: 15px;
+  
+    .brand_slider_item{ background: #252424;}
+
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
+
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+
+
+
+
+  }
+}
+
+.load_more_btn_row{ width: 100%; display: flex; flex-wrap: wrap; justify-content: center; margin-top: 25px;}

@@ -145,7 +145,7 @@ function tasheel_scripts()
 	// Enqueue Google Fonts - Poppins
 	wp_enqueue_style('google-fonts-poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', array(), null);
 
-	// Enqueue Swiper (needed for global brands slider)
+	// Enqueue Swiper (needed for global brands slider and other sliders)
 	wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11.0.0');
 	wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.0', true);
 
@@ -304,11 +304,17 @@ function tasheel_scripts()
 
 	// Enqueue component styles
 	if (is_front_page()) {
-		// Enqueue GSAP library (CDN)
-		wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', false);
+		// Enqueue GSAP library (local file)
+		$gsap_js_path = get_template_directory() . '/assets/js/gsap-latest-beta.min.js';
+		if (file_exists($gsap_js_path)) {
+			wp_enqueue_script('gsap', get_template_directory_uri() . '/assets/js/gsap-latest-beta.min.js', array(), _S_VERSION, false);
+		}
 
-		// Enqueue GSAP ScrollTrigger plugin (CDN)
-		wp_enqueue_script('gsap-scrolltrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap'), '3.12.5', false);
+		// Enqueue GSAP ScrollTrigger plugin (local file)
+		$scrolltrigger_js_path = get_template_directory() . '/assets/js/ScrollTrigger.min.js';
+		if (file_exists($scrolltrigger_js_path)) {
+			wp_enqueue_script('gsap-scrolltrigger', get_template_directory_uri() . '/assets/js/ScrollTrigger.min.js', array('gsap'), _S_VERSION, false);
+		}
 
 		// Enqueue Swiper CSS and JS (CDN)
 		wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11.0.0');
@@ -349,7 +355,7 @@ function tasheel_scripts()
 	}
 
 	// Load AOS for pages that use components with AOS animations (About, Leadership, etc.)
-	if (is_page_template(array('page-about.php', 'page-leadership.php', 'page-culture-people.php', 'page-career.php'))) {
+	if (is_page_template(array('page-about.php', 'page-about-us.php', 'page-leadership.php', 'page-culture-people.php', 'page-career.php'))) {
 		// Enqueue AOS (Animate On Scroll) library (CDN) if not already loaded
 		if (!wp_style_is('aos-css', 'enqueued')) {
 			wp_enqueue_style('aos-css', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css', array(), '2.3.4');
@@ -358,6 +364,21 @@ function tasheel_scripts()
 			wp_enqueue_script('aos-js', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js', array(), '2.3.4', true);
 			// Initialize AOS after DOM is ready
 			wp_add_inline_script('aos-js', 'document.addEventListener("DOMContentLoaded", function() { if (typeof AOS !== "undefined") { AOS.init({ duration: 800, once: true }); } });', 'after');
+		}
+
+		// Enqueue History Milestones script (for About Us page)
+		if (is_page_template('page-about-us.php')) {
+			// Ensure Swiper is loaded
+			if (!wp_script_is('swiper-js', 'enqueued')) {
+				wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11.0.0');
+				wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.0', true);
+			}
+			
+			// Enqueue History Milestones script
+			$history_milestones_js_path = get_template_directory() . '/assets/js/HistoryMilestones.js';
+			if (file_exists($history_milestones_js_path)) {
+				wp_enqueue_script('history-milestones-script', get_template_directory_uri() . '/assets/js/HistoryMilestones.js', array('swiper-js'), _S_VERSION, true);
+			}
 		}
 	}
 

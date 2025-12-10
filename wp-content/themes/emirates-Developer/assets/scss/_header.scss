@@ -1,5 +1,5 @@
 .header-main {
-   border-bottom: solid 1px #ffffff40; position: absolute; width:100%; top:0; z-index: 4; padding-top: 25px; padding-bottom: 25px;
+   border-bottom: solid 1px #ffffff40; position: absolute; width:100%; top:0; z-index:100; padding-top: 25px; padding-bottom: 25px;
 
 
    .logo_desktop{ width: 221px;}
@@ -50,8 +50,8 @@
 }
 
 .mobile_menu_overlay{
-  position: fixed; top: 0; right: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.9);
-  transform: translateX(100%); transition: transform .3s ease; z-index: 9; padding: 100px 30px;
+  position: fixed; top: 0; right: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.9); z-index: 99;
+  transform: translateX(100%); transition: transform .3s ease;   padding: 100px 30px;
   display: flex; align-items: flex-start; justify-content: flex-end;
 }
 .mobile_menu_overlay.mobile_menu_open{ transform: translateX(0); }

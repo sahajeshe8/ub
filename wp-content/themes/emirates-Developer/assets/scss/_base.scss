@@ -19,6 +19,14 @@ body {
   scrollbar-width: none;
 }
 
+p{ font-size: 16px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    
+  }
+}
+
 
 
 a{ text-decoration: none;}
@@ -26,7 +34,7 @@ ul{
   li{ list-style: none;}
 }
 
-img{ width: 100%; height: auto; display: block;}
+img{ max-width: 100%; height: auto; display: block;}
 
 
 
