@@ -33,7 +33,13 @@ html{
 
 }
 .btn_style{  background: rgba(255, 255, 255, 0.3); border: solid 1px #ffffff; height: 51px; padding: 0 30px; display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; font-size: 16px;  font-weight: 400; color: #ffffff;
-   &:hover{ background: rgba(255, 255, 255, 0.8); color: #1d1d1d; }
+   &:hover{ background: rgba(255, 255, 255, 0.8); color: #1d1d1d;
+   
+         .buttion_blue_icn{
+
+            img{ filter: invert(0.8); }
+         }  
+   }
 
 
 
@@ -42,9 +48,19 @@ html{
    }
 
 
-   &.buttion_blue{ background: #293977; border: solid 1px #ffffff; color: #fff; color: #fff; 
-      &:hover{ background: #e4e9ff; color: #000;}
+   &.buttion_blue{ background: #293977; border:none;  color: #fff; 
+      &:hover{ background: #e4e9ff; color: #000;
+      
+         .buttion_blue_icn{
+
+            img{ filter: invert(0.8); }
+         }
+      }
+
+      .buttion_blue_icn{ display: inline-block;   padding-right:20px;}
    }
+
+   &.buttion_line{ border: solid 1px #293977;}
 
    @media (max-width: 1300px) {
       padding: 0 20px;
@@ -86,3 +102,9 @@ html{
 .text_black{ color: #000;}
 
 .h_100vh{ height: 100vh; }
+
+.image-block{ 
+   img{ width: 100%; height: auto;}
+}
+
+.bg-gray{ background: #F6F6F6;}

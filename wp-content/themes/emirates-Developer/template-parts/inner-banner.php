@@ -76,13 +76,31 @@ if ( empty( $banner_title_text ) ) {
 	$banner_title_text = get_the_title();
 }
 
+// Check if this is a brand detail page
+$is_brand_detail_page = is_page_template( 'page-brand-detail.php' );
+
+// Add extra class for brand detail page
+$banner_container_class = 'bannerContainer-inner';
+if ( $is_brand_detail_page ) {
+	$banner_container_class .= ' brand-detail-banner';
+}
+
 ?>
 
-<div class="bannerContainer-inner" style="background-image: url('<?php echo $banner_bg; ?>');">
+<div class="<?php echo esc_attr( $banner_container_class ); ?>" style="background-image: url('<?php echo $banner_bg; ?>');">
   <div class="inner_banner_txt_block_01">
 	 <div class="wrap">
 	 <h2><?php echo $banner_title_text; ?></h2>
+
+	 <?php if ( $is_brand_detail_page ) : ?>
+		<div class="brand_detail_logo_section">
+			 
+				  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand-detail-logo-01.jpg" alt="Brand Detail Banner">
+		 
+		 </div>
+		<?php endif; ?>
   </div>
 </div>
+ 
 </div>
 
