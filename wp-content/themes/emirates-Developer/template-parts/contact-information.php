@@ -21,7 +21,7 @@
             </p>
 
             <div class="contact_address_block">
-                <h4 class="contact_address_title">Address</h4>
+                <h4 >Address</h4>
           <div class="address_block_item">
                     <div class="contact_address_icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" alt="Location">
@@ -54,9 +54,60 @@ United Arab Emirates<br>
                     </div>
                 
             </div>
+
+            <a href="#" class="whatsapp_icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/whatsap-icn.svg" alt="Map Marker">
+            </a>
      </div>
      <div class="contact_form_block">
-        dfdf
+        <ul class="contact_form_ul">
+
+        <li>
+            <input  type="text" placeholder="Name*" class="input">
+        </li>
+        <li>
+            <input  type="text" placeholder="Company*" class="input">
+        </li>
+        <li>
+            <input  type="text" placeholder="Email*" class="input">
+        </li>
+        <li>
+            <input  type="text" placeholder="Phone*" class="input">
+        </li>
+       
+        <li>
+            <textarea placeholder="Message*" class="input"></textarea>
+        </li>
+
+
+        <li class="contact_form_submit_block">
+            <button type="submit" class="btn_style buttion_blue">Send Message</button>
+
+            <ul class="social-media-links">
+                <li>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook">
+                    </a>    
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/x.svg" alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </li>
+</ul>
      </div>
 </div>
 

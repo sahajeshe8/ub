@@ -67,3 +67,37 @@
   .menu_toggle{ display: block; }
   .header_main_wrapper{ align-items: center; }
 }
+
+// Header classes for different pages
+.header-no-banner {
+  position: relative !important;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header-media-center-detail,
+.media-center-detail-page {
+  position: relative !important;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header-inner-page {
+  // Default inner page styles
+  &.header-no-banner {
+    position: relative !important;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.header-front-page {
+  // Front page specific styles
+  position: absolute !important;
+  background: transparent !important;
+}
+
+.header-contact-page,
+.header-about-page,
+.header-products-page,
+.header-brands-page,
+.header-blog-page {
+  // Specific page template styles can be added here
+}

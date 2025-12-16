@@ -23,7 +23,73 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header class="header-main header_b" id="headerMainSection">
+	<?php
+	// Determine header classes based on page type
+	$header_classes = array( 'header-main', 'header_b' );
+	
+	// Front page
+	if ( is_front_page() ) {
+		$header_classes[] = 'header-front-page';
+	}
+	
+	// Inner pages with banner
+	if ( is_page() && ! is_front_page() ) {
+		$header_classes[] = 'header-inner-page';
+		
+		// Check if page has banner (inner-banner template part)
+		$has_banner = true; // Default to true for inner pages
+		if ( ! $has_banner ) {
+			$header_classes[] = 'header-no-banner';
+		}
+	}
+	
+	// Media Center Detail page
+	if ( is_page_template( 'page-media-center-detail.php' ) ) {
+		$header_classes[] = 'header-media-center-detail';
+		$header_classes[] = 'media-center-detail-page';
+		$header_classes[] = 'header-no-banner';
+	}
+	
+	// Contact Us page
+	if ( is_page_template( 'page-contact-us.php' ) ) {
+		$header_classes[] = 'header-contact-page';
+	}
+	
+	// Careers page
+	if ( is_page_template( 'page-careers.php' ) ) {
+		$header_classes[] = 'header-careers-page';
+	}
+	
+	// Career Detail page
+	if ( is_page_template( 'page-career-detail.php' ) ) {
+		$header_classes[] = 'header-career-detail';
+		$header_classes[] = 'career-detail-page';
+		$header_classes[] = 'header-no-banner';
+	}
+	
+	// About Us page
+	if ( is_page_template( 'page-about-us.php' ) ) {
+		$header_classes[] = 'header-about-page';
+	}
+	
+	// Products pages
+	if ( is_page_template( 'page-products.php' ) || is_page_template( 'page-product-detail.php' ) ) {
+		$header_classes[] = 'header-products-page';
+	}
+	
+	// Brands pages
+	if ( is_page_template( 'page-brands.php' ) || is_page_template( 'page-brand-detail.php' ) ) {
+		$header_classes[] = 'header-brands-page';
+	}
+	
+	// Blog/Archive pages
+	if ( is_home() || is_archive() || is_single() ) {
+		$header_classes[] = 'header-blog-page';
+	}
+	
+	$header_class_string = implode( ' ', array_unique( $header_classes ) );
+	?>
+	<header class="<?php echo esc_attr( $header_class_string ); ?>" id="headerMainSection">
    <div class="wrap">
 
      <div class="header_main_wrapper">

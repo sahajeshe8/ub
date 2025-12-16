@@ -58,6 +58,29 @@ var swiper = new Swiper(".swiper_global_brands", {
 	},
   });
 
+  var swiper = new Swiper(".related_news", {
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// pagination: {
+	//   el: ".swiper-pagination",
+	//   clickable: true,
+	// },
+	breakpoints: {
+	  640: {
+		slidesPerView: 2,
+		spaceBetween: 10,
+	  },
+	  768: {
+		slidesPerView: 3,
+		spaceBetween: 15,
+	  },
+	  1024: {
+		slidesPerView: 3,
+		spaceBetween: 20,
+	  },
+	},
+  });
+
   var swiper = new Swiper(".swiper_building_trust", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -70,6 +93,36 @@ var swiper = new Swiper(".swiper_global_brands", {
 	  disableOnInteraction: false,
 	},
 	loop: true,
+  });
+
+  // Building Trust Vertical Card Swiper
+  var buildingTrustVerticalSwiper = new Swiper(".building_trust_vertical_swiper", {
+	direction: 'vertical',
+	slidesPerView: 1,
+	spaceBetween: 10,
+	centeredSlides: true,
+	grabCursor: true,
+	loop: true,
+	speed: 600,
+	pagination: {
+	  el: ".building_trust_vertical_pagination",
+	  clickable: true,
+	  type: 'bullets',
+	},
+	// autoplay: {
+	//   delay: 3000,
+	//   disableOnInteraction: false,
+	// },
+	breakpoints: {
+	  768: {
+		slidesPerView: 2,
+		spaceBetween: 10,
+	  },
+	  1024: {
+		slidesPerView: 2.5,
+		spaceBetween: 15,
+	  },
+	},
   });
 
 

@@ -189,10 +189,28 @@
         // Function to create the map
         function createMap() {
             try {
+                // Check if markers array exists
+                const markers = config.markers || [];
+                
+                if (markers.length === 0) {
+                    console.warn('ContactMap: No markers provided');
+                    return;
+                }
+
+                // Calculate center point from all markers
+                let centerLat = 0;
+                let centerLng = 0;
+                markers.forEach(function(marker) {
+                    centerLat += parseFloat(marker.latitude);
+                    centerLng += parseFloat(marker.longitude);
+                });
+                centerLat = centerLat / markers.length;
+                centerLng = centerLng / markers.length;
+
                 // Create map
                 const map = new google.maps.Map(mapContainer, {
-                    center: { lat: config.latitude, lng: config.longitude },
-                    zoom: config.zoom,
+                    center: { lat: centerLat, lng: centerLng },
+                    zoom: config.zoom || 10,
                     styles: mapStyle,
                     disableDefaultUI: false,
                     zoomControl: false,
@@ -203,23 +221,73 @@
                     fullscreenControl: false,
                 });
 
-                // Create custom marker
-                const marker = new google.maps.Marker({
-                    position: { lat: config.latitude, lng: config.longitude },
-                    map: map,
-                    icon: {
-                        url: config.markerIcon,
-                        scaledSize: new google.maps.Size(60, 80),
-                        anchor: new google.maps.Point(30, 80)
-                    },
-                    animation: google.maps.Animation.DROP,
+                // Create bounds to fit all markers
+                const bounds = new google.maps.LatLngBounds();
+                const mapMarkers = [];
+
+                // Create markers
+                markers.forEach(function(markerData, index) {
+                    const position = {
+                        lat: parseFloat(markerData.latitude),
+                        lng: parseFloat(markerData.longitude)
+                    };
+
+                    // Create marker
+                    const marker = new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        title: markerData.title || 'Location ' + (index + 1),
+                        icon: {
+                            url: config.markerIcon,
+                            scaledSize: new google.maps.Size(44, 44),
+                            anchor: new google.maps.Point(22, 44)
+                        },
+                        animation: google.maps.Animation.DROP,
+                    });
+
+                    // Add to bounds
+                    bounds.extend(position);
+
+                    // Create info window if title or address is provided
+                    if (markerData.title || markerData.address) {
+                        const infoWindow = new google.maps.InfoWindow({
+                            content: '<div style="padding: 10px;"><strong>' + 
+                                    (markerData.title || '') + 
+                                    '</strong><br>' + 
+                                    (markerData.address || '') + 
+                                    '</div>'
+                        });
+
+                        // Add click event to marker
+                        marker.addListener('click', function() {
+                            // Close all other info windows
+                            mapMarkers.forEach(function(m) {
+                                if (m.infoWindow) {
+                                    m.infoWindow.close();
+                                }
+                            });
+                            infoWindow.open(map, marker);
+                        });
+
+                        marker.infoWindow = infoWindow;
+                    }
+
+                    mapMarkers.push(marker);
                 });
 
-                // Store map instance globally for debugging
-                window.contactMapInstance = map;
-                window.contactMapMarker = marker;
+                // Fit map to show all markers
+                if (markers.length > 1) {
+                    map.fitBounds(bounds);
+                    // Add padding to bounds
+                    const padding = 50;
+                    map.fitBounds(bounds, padding);
+                }
 
-                console.log('ContactMap: Map initialized successfully');
+                // Store map instance and markers globally for debugging
+                window.contactMapInstance = map;
+                window.contactMapMarkers = mapMarkers;
+
+                console.log('ContactMap: Map initialized successfully with', markers.length, 'markers');
             } catch (error) {
                 console.error('ContactMap: Error creating map:', error);
             }

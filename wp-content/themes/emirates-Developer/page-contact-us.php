@@ -45,7 +45,12 @@ get_template_part( 'template-parts/contact-information' );
 
 <?php
 // Contact Form Section
-get_template_part( 'template-parts/contact-form' );
+get_template_part( 'template-parts/contact-address' );
+?>
+
+<?php
+// Contact Map Section
+get_template_part( 'template-parts/contact-map' );
 ?>
 
 </main><!-- #main -->
