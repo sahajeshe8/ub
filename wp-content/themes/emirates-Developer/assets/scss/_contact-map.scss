@@ -22,7 +22,13 @@
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 14px 34px 0 rgba(0,0,0,0.08);
+  
+  }
+
+  .contact_map_container{
+    width: 100%;
+    height: 500px;
+    min-height: 400px;
   }
 
   .contact_map_image{

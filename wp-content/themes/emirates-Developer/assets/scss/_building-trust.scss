@@ -1,13 +1,143 @@
-.building_trust_content_wrap{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; }
-
-.building_trust_content{ width: 40%; border-right: solid 1px #c4c4c4;  
+.building_trust_content_wrap{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; width: 40%; }
+.building_trust_content_wrap_inner{ width: 100%; display: flex; flex-wrap: wrap;}
+.building_trust_content{ width: 100%; border-right: solid 1px #c4c4c4;  
 
 
   .swiper-pagination-bullet{ width: 10px; height: 10px; background: #d9d9d9;}
 
 
 }
- .building_trust_content_02{ width: 60%; }  
+ .building_trust_content_02{ width: 60%;  padding-left: 4%;
+
+	.building_trust_content_02_inner{ width: 100%; display: flex; flex-wrap: wrap;}
+}
+
+/* Building Trust Vertical Card Swiper */
+.building_trust_vertical_swiper {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+
+	.swiper-wrapper {
+		align-items: center;
+	}
+
+	.swiper-slide {
+		width: 100%;
+		height: auto;
+		opacity: 0.5;
+		transform: scale(0.9);
+		transition: opacity 0.4s ease, transform 0.4s ease;
+
+		&.swiper-slide-active {
+			opacity: 1;
+			transform: scale(1);
+			z-index: 10;
+		}
+
+		&.swiper-slide-prev,
+		&.swiper-slide-next {
+			opacity: 0.7;
+			transform: scale(0.95);
+		}
+	}
+
+	.vertical_card {
+		background: #fff;
+		border-radius: 12px;
+		height: 100%;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+		}
+
+		.card_image {
+			width: 100%;
+			height: 250px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.card_content {
+			padding: 20px;
+height: 100%;
+			h3 {
+				font-size: 20px;
+				font-weight: 600;
+				margin: 0 0 10px 0;
+				color: #000;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 1.6;
+				margin: 0;
+				color: #666;
+			}
+		}
+	}
+
+	.building_trust_vertical_pagination {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		justify-content: center;
+		z-index: 10;
+
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			background: rgba(0, 0, 0, 0.3);
+			opacity: 1;
+			margin: 0;
+			transition: all 0.3s ease;
+
+			&.swiper-pagination-bullet-active {
+				background: #000;
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.building_trust_vertical_swiper {
+		height: 400px;
+
+		.vertical_card {
+			.card_image {
+				height: 200px;
+			}
+
+			.card_content {
+				padding: 15px;
+
+				h3 {
+					font-size: 18px;
+				}
+
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}  
  
  .building_trust_content_inner{ 
 	background-size: contain !important; 

@@ -178,13 +178,7 @@ function tasheel_scripts()
 	if (file_exists($header_css_path)) {
 		wp_enqueue_style('header-style', get_template_directory_uri() . '/assets/css/Header.css', array(), _S_VERSION);
 	}
-
-	// Enqueue Footer component styles (loaded on all pages)
-	$footer_css_path = get_template_directory() . '/assets/css/Footer.css';
-	if (file_exists($footer_css_path)) {
-		wp_enqueue_style('footer-style', get_template_directory_uri() . '/assets/css/Footer.css', array(), _S_VERSION);
-	}
-
+ 
 	// Enqueue InnerBanner component styles (loaded on all pages - can be used on any inner page)
 	$inner_banner_css_path = get_template_directory() . '/assets/css/InnerBanner.css';
 	if (file_exists($inner_banner_css_path)) {
@@ -316,6 +310,12 @@ function tasheel_scripts()
 			wp_enqueue_script('gsap-scrolltrigger', get_template_directory_uri() . '/assets/js/ScrollTrigger.min.js', array('gsap'), _S_VERSION, false);
 		}
 
+		// Enqueue Stack Section script
+		$stack_section_js_path = get_template_directory() . '/assets/js/StackSection.js';
+		if (file_exists($stack_section_js_path)) {
+			wp_enqueue_script('stack-section-script', get_template_directory_uri() . '/assets/js/StackSection.js', array('gsap-scrolltrigger'), _S_VERSION, true);
+		}
+
 		// Enqueue Swiper CSS and JS (CDN)
 		wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11.0.0');
 		wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.0', true);
@@ -383,7 +383,7 @@ function tasheel_scripts()
 	}
 
 	// Contact page specific scripts
-	if (is_page_template('page-contact.php')) {
+	if (is_page_template('page-contact.php') || is_page_template('page-contact-us.php')) {
 		// Load ContactMap script in footer, after other scripts
 		$contact_map_js_path = get_template_directory() . '/assets/js/ContactMap.js';
 		if (file_exists($contact_map_js_path)) {

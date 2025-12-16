@@ -11,6 +11,8 @@
 	<div class="banner_txt_block_01">
 		<div class="wrap">
 
+		<div class="building_trust_content_wrap_inner">
+
 <div class="building_trust_content_wrap">
 
 			  <div class="building_trust_content">
@@ -108,7 +110,54 @@
 			  </div>
 			 
 
+			  <div class="building_trust_content_02">
+				<div class="building_trust_content_02_inner">
+					<div class="swiper building_trust_vertical_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="vertical_card">
+									 
+									<div class="card_content">
+										<h3>Card Title 1</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="vertical_card">
+									 
+									<div class="card_content">
+										<h3>Card Title 2</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="vertical_card">
+									 
+									<div class="card_content">
+										<h3>Card Title 3</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="vertical_card">
+									 
+									<div class="card_content">
+										<h3>Card Title 4</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination building_trust_vertical_pagination"></div>
+					</div>
+				</div>
+			  </div>
+
 			 </div>
 			 </div>
+</div>
 	</div>
 </section>
