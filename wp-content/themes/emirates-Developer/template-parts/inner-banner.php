@@ -90,10 +90,10 @@ if ( $is_brand_detail_page ) {
 <div class="<?php echo esc_attr( $banner_container_class ); ?>" style="background-image: url('<?php echo $banner_bg; ?>');">
   <div class="inner_banner_txt_block_01">
 	 <div class="wrap">
-	 <h2><?php echo $banner_title_text; ?></h2>
+	 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true"><?php echo $banner_title_text; ?></h2>
 
 	 <?php if ( $is_brand_detail_page ) : ?>
-		<div class="brand_detail_logo_section">
+		<div class="brand_detail_logo_section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 			 
 				  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand-detail-logo-01.jpg" alt="Brand Detail Banner">
 		 

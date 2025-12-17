@@ -34,7 +34,7 @@ if ( is_array( $description ) ) {
 <section class="pt_80 page_description_section">
 	<div class="wrap">
 		<?php if ( ! empty( $section_title ) ) : ?>
-		<div class="global_brands_content_title  ">
+		<div class="global_brands_content_title  " data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
 			<h3 class="h3_title_55 text_black">
 				<?php echo wp_kses( $section_title, array( 'br' => array() ) ); ?>
 			</h3>

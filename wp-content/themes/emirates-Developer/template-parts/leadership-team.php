@@ -9,7 +9,7 @@
 
 <section class="pt_80 pb_80 bg_black bg_shadow leadership_team_section">
 	<div class="wrap z_10">
-	<div class="global_brands_content_title pb_30">
+	<div class="global_brands_content_title pb_30" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 				<h3 class="h3_title_55">
 				Leadership Team
 				</h3>
@@ -25,7 +25,7 @@
 </div>
 			</div>
 
-			<div class="leadership_team_grid">
+			<div class="leadership_team_grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 			<div class="leadership_team_block_01">
 				 <div class="team_img_block">
 

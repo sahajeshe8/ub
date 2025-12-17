@@ -112,14 +112,20 @@
                     h3{ margin: 0; padding: 0; color: #173B87; @include px-rem(30); font-weight:700; line-height: 100%; }
                     span{ margin: 0; padding: 0; color: #404040; font-size: 15px; display: inline-block; margin-top:4px;}
 
-                    @media screen and (max-width: 700px) { width: 100%;}
+                    @media screen and (max-width: 1024px) { width: 100%; margin-bottom: 15px;}
                 }
                 &.cl_02{ width: 33%;
+                    @media screen and (max-width: 1024px) {
+                        width:50%;
+                    }
                     @media screen and (max-width: 700px) { width: 100%; padding-top: 15px; padding-bottom: 15px;}
                 }
                 &.cl_03{ width: 22%; display: flex; flex-wrap: wrap; align-items: flex-end;
                 
                     .btn_style{ margin-left: auto; gap: 10px;}
+                    @media screen and (max-width: 1024px) {
+                        width:50%;
+                    }
                     @media screen and (max-width: 700px) { width: 100%;}
                 }
 
@@ -302,18 +308,37 @@
     display: flex; flex-wrap: wrap; justify-content: space-between;
 }
 
-.career_lable_txt{ font-size: 16px; color: #000000;   opacity: 0.55; display: inline-block; padding-bottom: 15px;}
+.career_lable_txt{ font-size: 16px; color: #000000;   opacity: 0.55; display: inline-block; padding-bottom: 15px;
 
-.job_description_title{ display: inline-flex;  margin-top: 35px; background: #173b87; padding: 5px 10px; color: #fff; font-weight: 300;}
+    @media screen and (max-width: 700px) { font-size: 13px;}
 
-.career_detail_left{ width:45%;}
+}
+
+.job_description_title{ display: inline-flex;  margin-top: 35px; background: #173b87; padding: 5px 10px; color: #fff; font-weight: 300; font-size: 16px;
+
+    
+    @media screen and (max-width: 700px) {
+        font-size: 14px; margin-top: 25px; 
+    }
+
+
+
+
+
+
+
+}
+
+.career_detail_left{ width:45%;
+    @media screen and (max-width: 700px) { width: 100%;}
+}
 .career_detail_right{ 
-    width: 45%;
+    width: 45%; padding-top:39px;
     
     .careers_apply_form {
-        background: #293977;
-        padding: 40px;
-        border-radius: 0;
+      
+        border-radius: 0; 
+        margin-top: 35px;
         
         .careers_form_list {
             > li {
@@ -325,10 +350,96 @@
             margin-top: 20px;
             text-align: left;
         }
+
+       @media screen and (max-width: 700px) { margin-top: 25px;}
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 700px) {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 0px;
+    }
+}
+
+.careers_form_list{ padding: 0px; margin: 0; list-style: none; 
+    .form_input{ width: 100%; height: 61px; border: solid 1px #525961; padding-left: 25px; padding-right: 25px; font-size: 16px; color: #000000; outline: none;
+        
+        &::placeholder {
+            color: #000000;
+            opacity: 1;
+        }
+        
+        &::-webkit-input-placeholder {
+            color: #000000;
+            opacity: 1;
+        }
+        
+        &::-moz-placeholder {
+            color: #000000;
+            opacity: 1;
+        }
+        
+        &:-ms-input-placeholder {
+            color: #000000;
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 700px) {
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+    
+    .form_row_file {
+        .file_upload_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: solid 1px #525961;
+            padding:3px 3px 3px 20px; 
+            outline: none;
+            height: 61px;
+            gap: 20px;
+            
+            input[type="file"] {
+                display: none;
+            }
+            
+            .file_name_display {
+                flex: 1;
+                color: #161616;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                }
+            }
+            
+            .browse_btn {
+                margin: 0;
+                background: #173B87;
+                border: none;
+                color: #fff;
+                padding: 10px 25px;
+                cursor: pointer;
+                white-space: nowrap;
+                font-size: 16px;
+                height: auto;
+                height: 100%;
+                
+                &:hover {
+                    background: #1a4ba0;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                height: 45px;
+                font-size: 14px;
+            }
+        }
     }
 }

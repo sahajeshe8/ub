@@ -112,7 +112,7 @@ get_template_part( 'template-parts/product-overview' );
 					</ul>
 				</li>
 				<li class="cl_03">
-					<a href="#" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
+					<a href="<?php echo esc_url( home_url( '/careeres-details/' ) ); ?>" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
 				</li>
 			</ul>
 		</li>
@@ -140,7 +140,7 @@ get_template_part( 'template-parts/product-overview' );
 					</ul>
 				</li>
 				<li class="cl_03">
-					<a href="#" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
+					<a href="<?php echo esc_url( home_url( '/careeres-details/' ) ); ?>" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
 				</li>
 			</ul>
 		</li>
@@ -168,7 +168,7 @@ get_template_part( 'template-parts/product-overview' );
 					</ul>
 				</li>
 				<li class="cl_03">
-					<a href="#" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
+					<a href="<?php echo esc_url( home_url( '/careeres-details/' ) ); ?>" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
 				</li>
 			</ul>
 		</li>
@@ -196,7 +196,7 @@ get_template_part( 'template-parts/product-overview' );
 					</ul>
 				</li>
 				<li class="cl_03">
-					<a href="#" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
+					<a href="<?php echo esc_url( home_url( '/careeres-details/' ) ); ?>" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
 				</li>
 			</ul>
 		</li>
@@ -224,7 +224,7 @@ get_template_part( 'template-parts/product-overview' );
 					</ul>
 				</li>
 				<li class="cl_03">
-					<a href="#" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
+					<a href="<?php echo esc_url( home_url( '/careeres-details/' ) ); ?>" class="btn_style me-1 buttion_blue">Apply Now <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="Arrow Right"></span></a>
 				</li>
 			</ul>
 		</li>

@@ -37,13 +37,13 @@ if ( ! empty( $section_class ) ) {
 
 <section class="<?php echo $section_classes; ?>">
 	<div class="wrap">
-		<div class="global_brands_content_title pb_30">
+		<div class="global_brands_content_title pb_30" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 			<h3 class="h3_title_55 text_black">
 				<?php echo wp_kses( $section_title, array( 'br' => array() ) ); ?>
 			</h3>
 		</div>
 
-		<div class="global_brands_content_slider related_news related_news_slider">
+		<div class="global_brands_content_slider related_news related_news_slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="related_news_img">

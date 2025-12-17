@@ -75,7 +75,7 @@
       .team_img_block_txt_block{
         h3{ @include px-rem(20); font-weight: 400;
         
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 820px) {
             @include px-rem(35);
         }
         }

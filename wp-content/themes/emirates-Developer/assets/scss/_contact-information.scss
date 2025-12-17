@@ -128,6 +128,10 @@
             font-size: 16px;
             line-height: 1.6;
             color: #000000;
+
+            @media (max-width: 700px) {
+              font-size: 13px;
+            }
         }
 
 
@@ -165,7 +169,12 @@
         }
     }
 
-    h4{  @include px-rem(25); color: #293977; font-weight: 600; margin: 0 0 15px 0; line-height: 100%;}
+    h4{  @include px-rem(25); color: #293977; font-weight: 600; margin: 0 0 15px 0; line-height: 100%;
+    
+    @media (max-width: 700px) {
+        @include px-rem(45);
+    }
+    }
 }
 
 // Responsive styles for contact information content block

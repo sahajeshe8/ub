@@ -81,6 +81,52 @@ var swiper = new Swiper(".swiper_global_brands", {
 	},
   });
 
+  // Projects Banner Swiper
+  var projectsBannerSwiper = new Swiper(".projects_banner_slider", {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	speed: 800,
+	autoplay: {
+	  delay: 5000,
+	  disableOnInteraction: false,
+	},
+	pagination: {
+	  el: ".projects_banner_pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".projects_banner_next",
+	  prevEl: ".projects_banner_prev",
+	},
+  });
+
+  // Clients Swiper
+  var clientsSwiper = new Swiper(".clients_slider", {
+	slidesPerView: 2,
+	spaceBetween: 0,
+	loop: true,
+	speed: 600,
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+	breakpoints: {
+	  640: {
+		slidesPerView: 3,
+		spaceBetween: 0,
+	  },
+	  768: {
+		slidesPerView: 4,
+		spaceBetween: 0,
+	  },
+	  1024: {
+		slidesPerView: 5,
+		spaceBetween: 0,
+	  },
+	},
+  });
+
   var swiper = new Swiper(".swiper_building_trust", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -399,3 +445,46 @@ panels.forEach((panel, i) => {
 
   
 });
+
+
+
+
+
+
+
+ 
+var swiper = new Swiper(".mySwiper-cards-swiper", {
+	effect: "cards",
+	grabCursor: true,
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+	direction: "vertical",
+	reverseDirection: true,
+	cardsEffect: {
+	  slideShadows: true,
+	  rotate: false,
+	  // perSlideOffset: 8,
+	  perSlideOffset: 13,
+	  perSlideRotate: 0
+	},
+	pagination: {
+	  el: ".mySwiper-cards-swiper .swiper-pagination",
+	  clickable: true,
+	},
+	breakpoints: {
+	  1366: {
+		autoplay: false
+	  },
+	  1199: {
+		autoplay: false
+	  },
+	  820: {},
+	  480: {},
+	},
+});
+ 
+
+
+ 

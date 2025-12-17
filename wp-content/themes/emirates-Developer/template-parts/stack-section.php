@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="  pb_80 pinned_gallery stack-section">
+<section class="  pb_80 pinned_gallery stack-section" style="background: #F6F6F6;">
 	<div class="wrap">
 		<div class="pinned_image">
 			<div class="crd_block stack-text-block">
@@ -17,7 +17,7 @@
 					<h3 class="h3_title_55 text_black">
                     Connecting Industries with <br>Innovation and Quality
 					</h3>
-					<a href="#" class="btn_style me-1 buttion_blue">View All Products</a>
+					<a href="<?php echo esc_url( home_url( '/industries' ) ); ?>" class="btn_style me-1 buttion_blue">Explore Industries</a>
 				</div>
 			</div>
 		</div>
@@ -31,7 +31,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur urna.</p>
 
 
-                <a href="" class="global_buttion">
+                <a href="<?php echo esc_url( home_url( '/industries-detail' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/stack-arrow.svg" alt="RAMCRO">
 								</a>
 
@@ -51,7 +51,7 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur urna.</p>
 
 
-<a href="" class="global_buttion">
+<a href="<?php echo esc_url( home_url( '/industries-detail' ) ); ?>" class="global_buttion">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stack-arrow.svg" alt="RAMCRO">
                 </a>
 
@@ -77,7 +77,7 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur urna.</p>
 
 
-<a href="" class="global_buttion">
+<a href="<?php echo esc_url( home_url( '/industries-detail' ) ); ?>" class="global_buttion">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stack-arrow.svg" alt="RAMCRO">
                 </a>
 

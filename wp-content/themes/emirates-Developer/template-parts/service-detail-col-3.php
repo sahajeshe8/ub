@@ -12,7 +12,7 @@
 	 
 
 		<ul class="service_detail_col_3_list">
-			<li>
+			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 				<div class="service_detail_item">
                 <div class="service_detail_item_content">
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
@@ -23,7 +23,7 @@
 				 
 				</div>
 			</li>
-			<li>
+			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 				<div class="service_detail_item">
                 <div class="service_detail_item_content">
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
@@ -34,7 +34,7 @@
 					 
 				</div>
 			</li>
-			<li>
+			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-once="true">
 				<div class="service_detail_item">
 
                 <div class="service_detail_item_content">

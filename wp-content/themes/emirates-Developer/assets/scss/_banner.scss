@@ -30,13 +30,31 @@
 
 .banner_bottom_counter{ margin: 0 -0.8%; padding: 0; display: flex; flex-wrap: wrap; 
    li{ width: 24%;  padding:0.8%;
+   
    .counter_box{
       background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 2px solid #ffffff46;
     border-radius: 0px;
     padding: 25px 18px 25px 18px;
     width: 100%;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    
+    // Ensure blur is always visible during all AOS states
+    &,
+    &[data-aos],
+    &[data-aos].aos-animate,
+    &[data-aos]:not(.aos-animate) {
+      backdrop-filter: blur(3px) !important;
+      -webkit-backdrop-filter: blur(3px) !important;
+    }
+
+
+    @media (max-width: 700px) {
+      padding: 25px 10px 25px 10px;
+    }
    }
 
 
@@ -111,3 +129,6 @@ h2{ color: #fff; font-weight: 500; margin: 0; @include px-rem(60); line-height: 
 
 }
 
+
+
+.banner_bottom_counter_section{ border-top: solid 1px #dadada4f; padding-top: 20px;}

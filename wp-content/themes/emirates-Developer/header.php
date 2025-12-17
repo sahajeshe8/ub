@@ -77,6 +77,11 @@
 		$header_classes[] = 'header-products-page';
 	}
 	
+	// Projects pages
+	if ( is_page_template( 'page-projects.php' ) || is_page_template( 'page-project-detail.php' ) ) {
+		$header_classes[] = 'header-projects-page';
+	}
+	
 	// Brands pages
 	if ( is_page_template( 'page-brands.php' ) || is_page_template( 'page-brand-detail.php' ) ) {
 		$header_classes[] = 'header-brands-page';
@@ -85,6 +90,16 @@
 	// Blog/Archive pages
 	if ( is_home() || is_archive() || is_single() ) {
 		$header_classes[] = 'header-blog-page';
+	}
+	
+	// 404 page
+	if ( is_404() ) {
+		$header_classes[] = 'header-404-page';
+	}
+	
+	// Sitemap page
+	if ( is_page_template( 'page-sitemap.php' ) ) {
+		$header_classes[] = 'header-sitemap-page';
 	}
 	
 	$header_class_string = implode( ' ', array_unique( $header_classes ) );

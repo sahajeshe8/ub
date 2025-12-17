@@ -10,9 +10,10 @@ $innovative_products_data = get_query_var( 'innovative_products_data', array() )
 
 // Get data from array or use defaults
 $section_title = isset( $innovative_products_data['title'] ) ? $innovative_products_data['title'] : 'Innovative Products <br/>That Power Progress';
-$button_text = isset( $innovative_products_data['button_text'] ) ? $innovative_products_data['button_text'] : 'View All Products';
-$button_url = isset( $innovative_products_data['button_url'] ) ? $innovative_products_data['button_url'] : '#';
-$button_class = isset( $innovative_products_data['button_class'] ) ? $innovative_products_data['button_class'] : 'buttion_blue';
+$button_text   = isset( $innovative_products_data['button_text'] ) ? $innovative_products_data['button_text'] : 'View All Products';
+// Default button URL points to Products page if not provided
+$button_url    = isset( $innovative_products_data['button_url'] ) ? $innovative_products_data['button_url'] : home_url( '/products' );
+$button_class  = isset( $innovative_products_data['button_class'] ) ? $innovative_products_data['button_class'] : 'buttion_blue';
 $section_class = isset( $innovative_products_data['section_class'] ) ? $innovative_products_data['section_class'] : '';
 
 // Fallback to ACF fields if array is empty
@@ -58,7 +59,7 @@ if ( ! empty( $section_class ) ) {
 			<h4>Cables</h4>
 								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 </div>
-								<a href="" class="global_buttion">
+								<a href="<?php echo esc_url( home_url( '/product-detail' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_01.svg" alt="RAMCRO">
 								</a>
 							</div>
@@ -76,7 +77,7 @@ if ( ! empty( $section_class ) ) {
 			<h4>Lighting</h4>
 								<h3>Energy-efficient lamps and luminaires for commercial and residential spaces</h3>
 </div>
-								<a href="" class="global_buttion">
+								<a href="<?php echo esc_url( home_url( '/product-detail' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_01.svg" alt="RAMCRO">
 								</a>
 							</div>
@@ -96,7 +97,7 @@ if ( ! empty( $section_class ) ) {
 			<h4>Fans</h4>
 								<h3>Durable ceiling and ventilation fans designed for comfort and efficiency.</h3>
 </div>
-								<a href="" class="global_buttion">
+								<a href="<?php echo esc_url( home_url( '/product-detail' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_01.svg" alt="RAMCRO">
 								</a>
 							</div>

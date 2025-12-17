@@ -11,11 +11,11 @@
 	<div class="banner_txt_block_01">
 		<div class="wrap">
 			 <div class="our_story_content">
-				 <div class="our_story_image_block">
+				 <div class="our_story_image_block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 					 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-img.jpg" alt="Our Story Image">
 				 </div>
 
-				 <div class="our_story_txt_block">
+				 <div class="our_story_txt_block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 				 
 					 <h3 class="h3_title_55 text_black">Our Story</h3>
 					 <p>UB Emirates LLC, an ISO 9001:2015 certified company, is an importer, stockist and distributor of all types of electrical products representing many reputed brands either as a sole agent or distributor. Our range of products include Cables & wires, Lamps & Luminaries, Fans, Cable & Wiring accessories, Cable management system, Enclosures, Water heaters, Insect killers etc.

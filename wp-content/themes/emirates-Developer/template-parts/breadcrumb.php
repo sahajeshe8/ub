@@ -53,7 +53,7 @@ if ( empty( $breadcrumb_items ) ) {
 
 <section class="pt_40 pb_40 breadcrumb_section">
 	<div class="wrap">
-		<ul class="breadcrumb_list">
+		<ul class="breadcrumb_list" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
 			<?php 
 			$item_count = count( $breadcrumb_items );
 			foreach ( $breadcrumb_items as $index => $item ) : 

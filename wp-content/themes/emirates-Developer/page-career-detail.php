@@ -12,6 +12,27 @@ get_header();
 
 <main id="primary" class="site-main">
 
+<?php
+// Breadcrumb for Career Detail page
+$custom_breadcrumb = array(
+	array(
+		'title' => 'Home',
+		'url' => home_url( '/' ),
+	),
+	array(
+		'title' => 'Careers',
+		'url' => home_url( '/careers' ),
+	),
+	array(
+		'title' => get_the_title(), // Current job title
+		'url' => get_permalink(),
+	),
+);
+set_query_var( 'breadcrumb_items', $custom_breadcrumb );
+
+get_template_part( 'template-parts/breadcrumb' );
+?>
+
 <section class="career_detail_section pt_80 pb_80">
  <div class="wrap">
     <div class="career_detail_content">
@@ -26,41 +47,56 @@ get_header();
             <p>In massa dui, egestas a nunc at, dignissim consequat nisi. Curabitur dictum velit vel velit euismod ullamcorper. Nunc tellus augue, dictum a condimentum vitae, tempor in tellus.</p>
         </div>
         <div class="career_detail_right">
+
+        <h3 class="h3_title_40 text_black">Apply Now</h3>
             <form class="careers_apply_form" method="post" enctype="multipart/form-data">
                 <ul class="careers_form_list">
                     <li class="form_row_two_col">
-                        <ul>
-                            <li>
-                                <input type="text" id="full_name" name="full_name" placeholder="Full Name" required>
-                            </li>
-                            <li>
-                                <input type="email" id="email" name="email" placeholder="Email" required>
-                            </li>
-                        </ul>
+                    <input type="text" class="form_input" id="full_name" name="full_name" placeholder="First Name*" required>
+                       
                     </li>
-                    <li class="form_row_two_col">
-                        <ul>
+
+                    <li>
+                                <input class="form_input" type="email" id="email" name="email" placeholder="Last Name*" required>
+                            </li>
+
+
+
+
+
+                   
                             <li>
-                                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+                                <input class="form_input" type="tel" id="phone_number" name="phone_number" placeholder="Email Address*" required>
                             </li>
                             <li>
-                                <input type="text" id="service_required" name="service_required" placeholder="Service Required" required>
+                                <input class="form_input" type="text" id="service_required" name="service_required" placeholder="Contact Number*" required>
                             </li>
-                        </ul>
-                    </li>
+                  
                     <li class="form_row_full">
-                        <input type="url" id="linkedin_url" name="linkedin_url" placeholder="LinkedIn URL">
+                        <input class="form_input" type="url" id="linkedin_url" name="linkedin_url" placeholder="City*">
                     </li>
+
+
+                    
+                    <li class="form_row_full">
+                        <input class="form_input" type="url" id="linkedin_url" name="linkedin_url" placeholder="LinkedIn URL">
+                    </li>
+
+
+
+
+
+
                     <li class="form_row_file">
                         <div class="file_upload_wrapper">
-                            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                            <input class="form_input" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
                             <div class="file_name_display">Attach Resume *</div>
-                            <button type="button" class="btn_style buttion_blue browse_btn">Browse</button>
+                            <button type="button" class="btn_style buttion_blue browse_btn">Attach Resume</button>
                         </div>
                     </li>
                 </ul>
                 <div class="submit_btn_row">
-                    <button type="submit" class="btn_style buttion_white submit_btn">Submit</button>
+                    <button type="submit" class="btn_style buttion_blue">Submit</button>
                 </div>
             </form>
         </div>

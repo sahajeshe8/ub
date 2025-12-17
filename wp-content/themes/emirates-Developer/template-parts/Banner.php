@@ -43,23 +43,23 @@ for ( $i = 1; $i <= 3; $i++ ) {
   <div class="banner_txt_block_01">
 	 <div class="wrap">
 	 <div class="banner_content">
-                <h3>Delivering Trusted Brands &amp; Innovative</h3>
-                <h1>Products Across <br>The UAE and Beyond</h1>
-                <div class="button_wrps">
-                    <a href="" class="btn_style me-1 buttion_white">Explore Products</a>
-                    <a href="" class="btn_style btn_transparent">Get a Quote</a>
-                </div>
+                <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Delivering Trusted Brands &amp; Innovative</h3>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Products Across <br>The UAE and Beyond</h1>
+                <div class="button_wrps" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="btn_style me-1 buttion_white">Explore Products</a>
+                        <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn_style btn_transparent">Get a Quote</a>
+                    </div>
             </div> 
 
 
 
 	 </div>
 
-
+<div class="banner_bottom_counter_section">
 <div class="wrap">
 	 <div class="banner_txt_block_01">
 	 <ul  class="banner_bottom_counter">
-	<li>
+	<li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" data-aos-once="true">
 	<div class="counter_box">
                             <div class="counter_numb">
                                 40+
@@ -67,7 +67,7 @@ for ( $i = 1; $i <= 3; $i++ ) {
                             <p>Years of Excellence</p>
                         </div>
 	</li>
-	<li>
+	<li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
 	<div class="counter_box">
                             <div class="counter_numb">
                                 3
@@ -75,7 +75,7 @@ for ( $i = 1; $i <= 3; $i++ ) {
                             <p>Branches across UAE</p>
                         </div>
 	</li>
-	<li>
+	<li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" data-aos-once="true">
 	<div class="counter_box">
                             <div class="counter_numb">
                                 20+
@@ -83,7 +83,7 @@ for ( $i = 1; $i <= 3; $i++ ) {
                             <p>Global Brands</p>
                         </div>
 	</li>
-	<li>
+	<li data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" data-aos-once="true">
 	<div class="counter_box">
                             <div class="counter_numb">
                                 10,000+
@@ -98,5 +98,6 @@ for ( $i = 1; $i <= 3; $i++ ) {
 
 
   </div>
+</div>
 </div>
 

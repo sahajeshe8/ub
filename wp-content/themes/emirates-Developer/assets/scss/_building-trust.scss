@@ -1,5 +1,12 @@
-.building_trust_content_wrap{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; width: 40%; }
-.building_trust_content_wrap_inner{ width: 100%; display: flex; flex-wrap: wrap;}
+.building_trust_content_wrap{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; width: 40%;
+
+@media (max-width: 700px) {
+	width: 100%;
+}
+
+
+}
+.building_trust_content_wrap_inner{ width: 100%; display: flex; flex-wrap: wrap; padding-top: 80px;}
 .building_trust_content{ width: 100%; border-right: solid 1px #c4c4c4;  
 
 
@@ -9,7 +16,11 @@
 }
  .building_trust_content_02{ width: 60%;  padding-left: 4%;
 
-	.building_trust_content_02_inner{ width: 100%; display: flex; flex-wrap: wrap;}
+	.building_trust_content_02_inner{ width: 100%; }
+
+	@media (max-width: 700px) {
+		padding-left: 0; margin-top: 80px;
+	}
 }
 
 /* Building Trust Vertical Card Swiper */
@@ -236,7 +247,7 @@ height: 100%;
 
 @media only screen and (max-width: 600px) {
 	.building_trust_content_inner {
-		padding: 20px;
+		padding: 10%;
 	}
 	
 	.building_trust_slide_content { 
@@ -247,8 +258,9 @@ height: 100%;
 		}
 		
 		p {
-			font-size: 14px;
+			font-size: 12px;
 			margin-bottom: 20px;
+			line-height: 15px;
 		}
 	}
 	
@@ -280,5 +292,72 @@ height: 100%;
 
   color: #000; width: calc(100% - 70px); text-align: left; @include px-rem(20);
   strong{ width: 100%; display: block;  font-weight: 600; }
-  span{  font-weight: 300; opacity: 0.7; color: #000;  font-size: 15px; }
+  span{  font-weight: 300; opacity: 0.7; color: #000;  font-size: 15px;
+	@media (max-width: 700px) {
+		font-size: 12px;
+	}
+}
+}
+
+.building_trust_content_02_inner{
+
+ .mySwiper-cards-swiper {
+	aspect-ratio: 662 / 292;
+	position: relative;
+	
+	.swiper-slide{  
+	   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+	  
+		 
+	
+	}
+
+	p{ color: #000; text-align: left; }
+
+	.swiper-pagination {
+		position: unset;
+		bottom: 0;
+		  display: none !important;
+		transform: translateX(-50%);
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		justify-content: center;
+		z-index: 10;
+		padding-bottom: 10px;
+
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			background: rgba(0, 0, 0, 0.3);
+			opacity: 1;
+			margin: 0;
+			transition: all 0.3s ease;
+
+			&.swiper-pagination-bullet-active {
+				background: #000;
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		aspect-ratio: 662 / 750;
+	}
+ }
+
+ .swiper-3d .swiper-slide-shadow{  background: #fff;  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1); border: solid 1px #e7e7e7;  height:85%; }
+
+
+.card_content { margin: 20px; box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1); border: solid 1px #e7e7e7;   background: #fff; width: 100%; height:85%; display: flex; flex-wrap: wrap; align-items: center; padding:  7%;}
+
 }

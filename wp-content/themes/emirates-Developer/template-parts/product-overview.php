@@ -13,16 +13,6 @@ $overview_title = isset( $product_overview_data['title'] ) ? $product_overview_d
 $overview_description = isset( $product_overview_data['description'] ) ? $product_overview_data['description'] : '';
 $overview_buttons = isset( $product_overview_data['buttons'] ) ? $product_overview_data['buttons'] : array();
 
-// Fallback to ACF fields if array is empty
-if ( empty( $product_overview_data ) && function_exists( 'get_field' ) ) {
-	$overview_title = get_field( 'product_overview_title' );
-	if ( empty( $overview_title ) ) {
-		$overview_title = 'Overview';
-	}
-	$overview_description = get_field( 'product_overview_description' );
-	$overview_buttons = get_field( 'product_overview_buttons' );
-}
-
 // Handle description as array of paragraphs
 if ( is_array( $overview_description ) ) {
 	$overview_description = implode( "\n\n", $overview_description );
@@ -33,11 +23,11 @@ if ( is_array( $overview_description ) ) {
 <section class="pt_80 pb_80 product_overview_section">
 	<div class="wrap">
 		<div class="product_overview_content">
-			<div class="product_overview_title">
+			<div class="product_overview_title " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 				<h2 class="h3_title"><?php echo esc_html( $overview_title ); ?></h2>
 			</div>
 			<?php if ( ! empty( $overview_description ) ) : ?>
-			<div class="product_overview_description">
+			<div class="product_overview_description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 				<?php echo wp_kses_post( wpautop( $overview_description ) ); ?>
 				<?php if ( ! empty( $overview_buttons ) && is_array( $overview_buttons ) ) : ?>
 			<ul class="product_overview_buttons">

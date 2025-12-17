@@ -11,7 +11,7 @@
 
 <section class="pt_80  contact_map_section">
  
-		<div class="contact_map_wrapper">
+		<div class="contact_map_wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
 			<div id="contactMap" class="contact_map_container"></div>
 		</div>
 

@@ -11,7 +11,7 @@
 	<div class="wrap">
 	 
 <div class="contact_information_content_block">
-     <div class="contact_information_content_item">
+     <div class="contact_information_content_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
      <h3 class="h3_title_55 text_black">
      Reach Out to Our Team
 			</h3>
@@ -59,7 +59,7 @@ United Arab Emirates<br>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/whatsap-icn.svg" alt="Map Marker">
             </a>
      </div>
-     <div class="contact_form_block">
+     <div class="contact_form_block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
         <ul class="contact_form_ul">
 
         <li>

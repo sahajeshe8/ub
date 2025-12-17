@@ -19,13 +19,13 @@
 
 <section class="history_milestones_section pt_80 pb_80">
             <div class="wrap">
-            <div class=" title_txt_block">
+            <div class=" title_txt_block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 		<h3 class="h3_title_55 text_black ">History & Milestones</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 		</div>
 
 
-    <div class="history_milestones_content">
+    <div class="history_milestones_content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
        <ul class="history_milestones_grid">
 
        <li class="history_milestones_item_1">

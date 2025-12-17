@@ -75,8 +75,11 @@ set_query_var( 'product_overview_data', $product_overview_data );
 get_template_part( 'template-parts/product-overview' );
 ?>
 
-        <section class="image-block">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-pro.jpg" alt="Fire Resistant Cable">
+        <section class="image-block video-block">
+<video controls autoplay muted loop>
+	<source src="<?php echo get_template_directory_uri(); ?>/assets/images/video-01.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
 </section>
 
 <?php

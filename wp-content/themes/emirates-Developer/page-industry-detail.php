@@ -69,7 +69,7 @@ get_template_part( 'template-parts/product-overview' );
 $innovative_products_data = array(
 	'title' => 'Related Products',
 	'button_text' => 'View All Products',
-	'button_url' => '#',
+	'url' => home_url( '/products' ),
 	'button_class' => 'buttion_blue',
 	'section_class' => 'bg-gray', // Extra class for section
 );
@@ -78,7 +78,7 @@ set_query_var( 'innovative_products_data', $innovative_products_data );
 get_template_part( 'template-parts/innovative-products' );
 ?>
 
-
+<?php get_template_part( 'template-parts/get-in-touch' ); ?> 
 
 </main><!-- #main -->
 

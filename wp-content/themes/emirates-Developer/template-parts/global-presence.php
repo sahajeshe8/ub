@@ -13,13 +13,13 @@
 
 		<div class="global_presence_content_box_wrp">
 
-		<div class="global_presence_content_box_item">
+		<div class="global_presence_content_box_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 
 		<p>Global Presence</p>
 		<h3 class="h3_title_55 text_black ">Connecting the <br/>World  <br/>Inspiring  <br/>Tomorrow</h3>
 		
 		</div>
-			 <div class="global_presence_content_box">
+			 <div class="global_presence_content_box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 
 			 <span class="map-marker mark_01">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/marker-01.png" alt="Global Presence">

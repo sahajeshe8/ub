@@ -18,7 +18,7 @@ get_header();
 	<section class="pt_80 pb_80 media_center_detail_section">
 		<div class="wrap">
 			 <div class="media_center_detail_content">
-                <ul class="share_buttons_list">
+                <ul class="share_buttons_list" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
                     <li>Share</li>
                     <li>
                         <a href="#" class="share_button">
@@ -45,12 +45,12 @@ get_header();
 
 
 
-<div class="media_center_detail_header">
+<div class="media_center_detail_header" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 <h1>Would you like to know more about UB Emirates? Here it is.</h1>
     <span>October 11, 2018</span>
 </div>
 
-<div class="media_center_detail_content_body">
+<div class="media_center_detail_content_body" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-once="true">
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat ipsum, ac vulputate libero nam molesie tellus non nisi ornare, sit amet rhoncus arcu euismod. In eu quam non urna feugiat accumsan quis quis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat ipsum, ac vulputate libero nam molesie tellus non nisi ornare, sit amet rhoncus arcu euismod.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat ipsum, ac vulputate libero nam molesie tellus non nisi ornare, sit amet rhoncus arcu euismod. In eu quam non urna feugiat accumsan quis quis ipsum.</p>
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/news-imge.jpg" alt=" ">

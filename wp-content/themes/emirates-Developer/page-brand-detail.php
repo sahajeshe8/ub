@@ -45,6 +45,20 @@ get_template_part( 'template-parts/breadcrumb' );
 ?>
 
 <?php
+// Get the current page content
+global $post;
+$page_content = '';
+if ( $post ) {
+	$page_content = apply_filters( 'the_content', $post->post_content );
+}
+
+// Product Overview data for Brand Detail
+$product_overview_data = array(
+	'title' => 'Overview',
+	'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat ipsum, ac vulputate libero nam molesie tellus non nisi ornare, sit amet rhoncus arcu euismod. In eu quam non urna feugiat accumsan quis quis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat ipsum, ac vulputate libero nam molesie tellus non nisi ornare, sit amet rhoncus arcu euismod. In eu quam non urna feugiat accumsan quis quis ipsum.',
+);
+set_query_var( 'product_overview_data', $product_overview_data );
+
 get_template_part( 'template-parts/product-overview' );
 ?>
 

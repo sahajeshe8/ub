@@ -11,7 +11,16 @@
 	<div class="banner_txt_block_01">
 		<div class="wrap">
 
-		<div class="building_trust_content_wrap_inner">
+
+
+		<div class="text_center text_center title_txt_block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
+		<h3 class="h3_title_55 text_black ">
+		Building Trust Through <br>very Connection
+		</h3>
+		 
+		</div>
+
+		<div class="building_trust_content_wrap_inner" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 
 <div class="building_trust_content_wrap">
 
@@ -112,47 +121,84 @@
 
 			  <div class="building_trust_content_02">
 				<div class="building_trust_content_02_inner">
-					<div class="swiper building_trust_vertical_swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="vertical_card">
-									 
-									<div class="card_content">
-										<h3>Card Title 1</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="vertical_card">
-									 
-									<div class="card_content">
-										<h3>Card Title 2</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="vertical_card">
-									 
-									<div class="card_content">
-										<h3>Card Title 3</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="vertical_card">
-									 
-									<div class="card_content">
-										<h3>Card Title 4</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination building_trust_vertical_pagination"></div>
-					</div>
+				 
+  <div class="swiper mySwiper-cards-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+		 <div class="card_content">
+
+		 <div>
+			<span class="card_icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quotes.svg" alt="Card">
+			</span>
+			<p>
+			“Lorem ipsum dolor sit amet, consectetur adipiscing elit mvulputate mollis convallis. Aliquam erat volutpa nec nteger et quam leo. Nulla pulvinar nec ligula quis ultrices pellentesque malesuada tellus eget tincidunt. Donec rutrum sem pharetra fermentum.”
+			</p>
+			<span class="card_author">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/auther-icn.png" alt="Card">
+			</span>
+</div>
+		 </div>
+	  </div>
+       
+       
+      <div class="swiper-slide">
+		 <div class="card_content">
+
+		 <div>
+			<span class="card_icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quotes.svg" alt="Card">
+			</span>
+			<p>
+			“Lorem ipsum dolor sit amet, consectetur adipiscing elit mvulputate mollis convallis. Aliquam erat volutpa nec nteger et quam leo. Nulla pulvinar nec ligula quis ultrices pellentesque malesuada tellus eget tincidunt. Donec rutrum sem pharetra fermentum.”
+			</p>
+			<span class="card_author">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/auther-icn.png" alt="Card">
+			</span>
+</div>
+		 </div>
+	  </div>
+
+
+
+	  <div class="swiper-slide">
+		 <div class="card_content">
+
+		 <div>
+			<span class="card_icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quotes.svg" alt="Card">
+			</span>
+			<p>
+			“Lorem ipsum dolor sit amet, consectetur adipiscing elit mvulputate mollis convallis. Aliquam erat volutpa nec nteger et quam leo. Nulla pulvinar nec ligula quis ultrices pellentesque malesuada tellus eget tincidunt. Donec rutrum sem pharetra fermentum.”
+			</p>
+			<span class="card_author">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/auther-icn.png" alt="Card">
+			</span>
+</div>
+		 </div>
+	  </div>
+
+	  <div class="swiper-slide">
+		 <div class="card_content">
+
+		 <div>
+			<span class="card_icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quotes.svg" alt="Card">
+			</span>
+			<p>
+			“Lorem ipsum dolor sit amet, consectetur adipiscing elit mvulputate mollis convallis. Aliquam erat volutpa nec nteger et quam leo. Nulla pulvinar nec ligula quis ultrices pellentesque malesuada tellus eget tincidunt. Donec rutrum sem pharetra fermentum.”
+			</p>
+			<span class="card_author">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/auther-icn.png" alt="Card">
+			</span>
+</div>
+		 </div>
+	  </div>
+      
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 				</div>
 			  </div>
 

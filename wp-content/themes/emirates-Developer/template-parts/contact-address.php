@@ -10,7 +10,7 @@
 <section class="pt_80 pb_80 bg_black bg_shadow">
 	<div class="wrap">
        <ul class="contact_address_list">
-            <li>
+            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
                 <div class="contact_address_item">
                     <h3>UB Emirates LLC - Branch</h3>
                     <h4>Address</h4>
@@ -115,10 +115,10 @@ United Arab Emirates<br>
 
                 </div>
             </li>
+            
 
 
-
-            <li>
+            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
                 <div class="contact_address_item">
                     <h3>UB Emirates LLC - Branch</h3>
                     <h4>Address</h4>
