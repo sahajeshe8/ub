@@ -69,12 +69,16 @@
     li{ 
       .product_item{ border: solid 1px #000000;
       
-        .global_logo_box_bottom{ position: unset; width: 100%; padding: 7%;}
+        .global_logo_box_bottom{ position: unset; width: 100%; padding: 7%;
+          .global_buttion{ position: absolute; bottom: 7%; right: 7%;}
+        
+        
+        }
       }
     }
 
 
-    h4{ color: #000;}
+    h4{ color: #000;  @include px-rem(22);}
 h3{ color: #000;}
 
 .global_buttion{ background: #000000; color: #fff;

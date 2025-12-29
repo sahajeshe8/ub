@@ -56,6 +56,9 @@
   font-size: 16px;
   font-weight: 300;
 }
+.button_link:hover, .list-unstyled li a:hover {
+  color: #5a5a5a;
+}
 
 .list-unstyled li {
   padding: 0 15px;
@@ -405,6 +408,7 @@ img {
 
 .trans,
 .button,
+a,
 .buttion {
   transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -3035,8 +3039,14 @@ img {
   width: 100%;
   padding: 7%;
 }
+.products_list.style-02 li .product_item .global_logo_box_bottom .global_buttion {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+}
 .products_list.style-02 h4 {
   color: #000;
+  font-size: 1.375rem;
 }
 .products_list.style-02 h3 {
   color: #000;

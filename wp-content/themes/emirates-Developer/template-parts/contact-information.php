@@ -102,7 +102,7 @@ United Arab Emirates<br>
 
                 <li>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="Instagram">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Instagram.svg" alt="Instagram">
                     </a>
                 </li>
             </ul>

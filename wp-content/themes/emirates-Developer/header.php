@@ -73,7 +73,7 @@
 	}
 	
 	// Products pages
-	if ( is_page_template( 'page-products.php' ) || is_page_template( 'page-product-detail.php' ) ) {
+	if ( is_page_template( 'page-products.php' ) || is_page_template( 'page-product-detail.php' ) || is_page_template( 'page-product-category.php' ) || is_page_template( 'page-product-fan.php' ) ) {
 		$header_classes[] = 'header-products-page';
 	}
 	

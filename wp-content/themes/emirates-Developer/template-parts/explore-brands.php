@@ -50,47 +50,47 @@
 				array(
 					'name'  => 'DECODUCT',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-01.jpg',
 				),
 				array(
 					'name'  => 'RAMCRO',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-02.jpg',
 				),
 				array(
-					'name'  => 'BINDEX',
+					'name'  => '',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-3.jpg',
+				),
+				array(
+					'name'  => '',
+					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+					'image' => get_template_directory_uri() . '/assets/images/brands-04.jpg',
 				),
 				array(
 					'name'  => 'SCAME',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-05.jpg',
 				),
 				array(
 					'name'  => 'USHA',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-06.jpg',
+				),
+				array(
+					'name'  => '',
+					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+					'image' => get_template_directory_uri() . '/assets/images/brands-07.jpg',
+				),
+				array(
+					'name'  => '',
+					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+					'image' => get_template_directory_uri() . '/assets/images/brands-08.jpg',
 				),
 				array(
 					'name'  => 'MAY',
 					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
-				),
-				array(
-					'name'  => 'EVERLUX',
-					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
-				),
-				array(
-					'name'  => 'MESC',
-					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
-				),
-				array(
-					'name'  => 'HARWAL',
-					'desc'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-					'image' => get_template_directory_uri() . '/assets/images/global_01.jpg',
+					'image' => get_template_directory_uri() . '/assets/images/brands-09.jpg',
 				),
 			);
 			?>

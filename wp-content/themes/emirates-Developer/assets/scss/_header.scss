@@ -31,7 +31,10 @@
 .list-unstyled{ display: flex; flex-wrap:wrap; margin-bottom: 0; padding: 0; width: calc(100% - 182px); margin-top: 0;}
 
  
-.button_link, .list-unstyled li a { color: #fff; font-size: 16px; font-weight: 300;}
+.button_link, .list-unstyled li a { color: #fff; font-size: 16px; font-weight: 300;
+
+  &:hover{ color: #5a5a5a; }
+}
 
 .list-unstyled li{ padding: 0 15px;
 
