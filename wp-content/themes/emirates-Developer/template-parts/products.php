@@ -39,7 +39,7 @@ if ( empty( $products_items ) ) {
 			'category' => 'Fans',
 			'title' => 'Durable ceiling and ventilation fans designed for comfort and efficiency.',
 			'image' => get_template_directory_uri() . '/assets/images/innovative_img_03.jpg',
-			'url' => home_url( '/products-catogery' ),
+			'url' => home_url( '/product-fan' ),
 		),
 		array(
 			'category' => 'Enclosures',
