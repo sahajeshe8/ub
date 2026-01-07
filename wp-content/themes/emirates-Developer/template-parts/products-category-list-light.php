@@ -1,6 +1,6 @@
 <?php
 /**
- * Products Component Template - Fan Products
+ * Products Component Template - Light Products
  *
  * @package tasheel
  */
@@ -14,7 +14,7 @@
  
 	<div class="product_overview_content mb_30" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 			<div class="product_overview_title">
-				<h2 class="h3_title">FAN</h2>
+				<h2 class="h3_title">Lighting</h2>
 
 				<div>
 				
@@ -42,28 +42,25 @@
 		<ul class="products_list style-02 style-03">
 			<?php
 			$product_items = array(
-				array('img' => 'fan_0021_Layer 2.jpg', 'title' => 'Ceiling Fan - ATOM'),
-				array('img' => 'fan_0020_Layer 3.jpg', 'title' => 'Ceiling Fan - KBC5-MS-56 '),
-				array('img' => 'fan_0019_Layer 4.jpg', 'title' => 'Ceiling Fan - KBQS 56'),
-				array('img' => 'fan_0018_Layer 6.jpg', 'title' => 'Wall Fans - MIST AIR '),
-				array('img' => 'fan_0017_Layer 7.jpg', 'title' => 'WALLFAN-KBFW-40-828R'),
-				array('img' => 'fan_0016_Layer 8.jpg', 'title' => 'TABLE FAN-KBFT-40-208'),
-				array('img' => 'fan_0015_Layer 9.jpg', 'title' => 'ORBIT FAN-KBOB-40-S001'),
-				array('img' => 'fan_0014_Layer 10.jpg', 'title' => 'STANDS FANS'),
-				array('img' => 'fan_0013_Layer 11.jpg', 'title' => 'STAND FAN-KBFS-40-921'),
-				array('img' => 'fan_0012_Layer 12.jpg', 'title' => 'WINDOW MOUNTED EXHAUST FAN - ROUND'),
-				array('img' => 'fan_0011_Layer 13.jpg', 'title' => 'WINDOW MOUNTED EXHAUST FAN - SQUARE'),
-				array('img' => 'fan_0010_Layer 14.jpg', 'title' => 'ELECTRIC SHUTTER FAN'),
-				array('img' => 'fan_0009_Layer 15.jpg', 'title' => 'AUTO SHUTTER FAN'),
-				array('img' => 'fan_0008_Layer 16.jpg', 'title' => 'METAL EXHAUST FANS - TURBO'),
-				array('img' => 'fan_0007_Layer 17.jpg', 'title' => 'EXHAUST FAN - INDUSTRIAL'),
-				array('img' => 'fan_0006_Layer 18.jpg', 'title' => 'EXHAUST FAN - INDUSTRIAL'),
-				array('img' => 'fan_0005_Layer 19.jpg', 'title' => 'PEDESTAL FAN - DOM'),
-				array('img' => 'fan_0004_Layer 20.jpg', 'title' => 'PEDESTAL FAN / STAND FAN - HEAVY DUTY - KBPF'),
-				array('img' => 'fan_0003_Layer 21.jpg', 'title' => 'PEDESTAL FAN / STAND FAN - HEAVY DUTY - KBEPM'),
-				array('img' => 'fan_0002_Layer 22.jpg', 'title' => 'WALL MOUNT - HEAVY DUTY'),
-				array('img' => 'fan_0001_Layer 23.jpg', 'title' => 'CENTRIFUGAL/ MIST FAN'),
-				array('img' => 'fan_0000_Layer 24.jpg', 'title' => 'PORTABLE BLOWER - INDUSTRIAL'),
+				array('img' => 'Lightings_0018_01.jpg', 'title' => 'LED LAMP E27 & B22'),
+                array('img' => 'Lightings_0017_02.jpg', 'title' => 'LED TUBULAR LAMP & CANDLE LAMP'),
+                array('img' => 'Lightings_0016_03.jpg', 'title' => 'LED HIGH POWER LAMP'),
+                array('img' => 'Lightings_0015_04.jpg', 'title' => 'LED LAMP MR16-GU5.3 & GU10'),
+                array('img' => 'Lightings_0014_05.jpg', 'title' => 'LED LAMP E27 & B22'),
+                array('img' => 'Lightings_0013_06.jpg', 'title' => 'LED DOWNLIGHT-COB'),
+                array('img' => 'Lightings_0012_07.jpg', 'title' => 'DOWN LIGHT & CEILING LIGHT'),
+                array('img' => 'Lightings_0011_08.jpg', 'title' => 'LED PANEL LIGHT 60X60'),
+                array('img' => 'Lightings_0010_09.jpg', 'title' => 'LED WEATHERPROOF'),
+                array('img' => 'Lightings_0009_10.jpg', 'title' => 'LED FLOOD LIGHT'),
+                array('img' => 'Lightings_0008_11.jpg', 'title' => 'PRO ACCENTE'),
+                array('img' => 'Lightings_0007_12.jpg', 'title' => 'COLORON'),
+                array('img' => 'Lightings_0006_13.jpg', 'title' => 'LED PANEL LIGHT – EDGELITE'),
+                array('img' => 'Lightings_0005_14.jpg', 'title' => 'LED PANEL LIGHT – SLIM PANEL'),
+                array('img' => 'Lightings_0004_15.jpg', 'title' => 'LED STRIP LIGHT'),
+                array('img' => 'Lightings_0003_16.jpg', 'title' => 'LED FLOOD LIGHT & PROJECTOR'),
+                array('img' => 'Lightings_0002_17.jpg', 'title' => 'LED WEATHERPROOF – PARKADE'),
+                array('img' => 'Lightings_0001_18.jpg', 'title' => 'LED HIGHBAY – APOLO'),
+                array('img' => 'Lightings_0000_19.jpg', 'title' => 'LED BULKHEAD – LMBH'),
 			);
 			$delay = 200;
 			foreach ($product_items as $index => $item) :

@@ -33,7 +33,7 @@ if ( empty( $products_items ) ) {
 			'category' => 'Lighting',
 			'title' => 'Energy-efficient lamps and luminaires for commercial and residential spaces',
 			'image' => get_template_directory_uri() . '/assets/images/innovative_img_02.jpg',
-			'url' => home_url( '/products-catogery' ),
+			'url' => home_url( '/product-lighting' ),
 		),
 		array(
 			'category' => 'Fans',
@@ -51,7 +51,13 @@ if ( empty( $products_items ) ) {
 			'category' => 'Accessories',
 			'title' => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
 			'image' => get_template_directory_uri() . '/assets/images/innovative_img_05.jpg',
-			'url' => home_url( '/products-catogery' ),
+			'url' => home_url( '/product-accessories' ),
+		),
+		array(
+			'category' => 'Water Heaters & Water Pump',
+			'title' => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+			'image' => get_template_directory_uri() . '/assets/images/innovative_img_05.jpg',
+			'url' => home_url( '/product-heaters' ),
 		),
 	);
 }
