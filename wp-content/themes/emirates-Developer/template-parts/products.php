@@ -42,10 +42,10 @@ if ( empty( $products_items ) ) {
 			'url' => home_url( '/product-fan' ),
 		),
 		array(
-			'category' => 'Enclosures',
+			'category' => 'G I CONDUIT & ACCESSORIES',
 			'title' => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
 			'image' => get_template_directory_uri() . '/assets/images/innovative_img_04.jpg',
-			'url' => home_url( '/products-catogery' ),
+			'url' => home_url( '/products-gi-conduit' ),
 		),
 		array(
 			'category' => 'Accessories',
