@@ -78,11 +78,7 @@
 								 </div>
 							 </div>
 
-
-
-
-						 </div>
-						 <div class="swiper-slide">
+							 <div class="swiper-slide">
 								 <div class="building_trust_slide_content">
 								 
 									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -112,14 +108,17 @@
 									 </div>
 								 </div>
 							 </div>
+
 						 </div>
-						 <div class="swiper-pagination"></div>
 					 </div>
+					 <div class="swiper-pagination"></div>
 				 </div>
 			  </div>
 			 
 
-			  <div class="building_trust_content_02">
+			
+
+			 </div>  <div class="building_trust_content_02">
 				<div class="building_trust_content_02_inner">
 				 
   <div class="swiper mySwiper-cards-swiper">
@@ -197,12 +196,10 @@
       
       
     </div>
-    <div class="swiper-pagination"></div>
   </div>
+  <div class="swiper-pagination horizontal-dots"></div>
 				</div>
 			  </div>
-
-			 </div>
 			 </div>
 </div>
 	</div>
