@@ -36,6 +36,7 @@
       will-change: transform, opacity;
       backface-visibility: hidden;
       transform-style: preserve-3d;
+      padding-top: 80px;
 
       img {
         width: 100%;
@@ -95,7 +96,7 @@
     // margin-top: 35px;
 
     .global_brands_content_title {
-      width: 100%; padding-top: 85px;
+      width: 100%;
     }
   }
 

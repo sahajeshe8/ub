@@ -110,7 +110,7 @@
                 &.cl_01{ width: 45%;
 
                     h3{ margin: 0; padding: 0; color: #173B87; @include px-rem(30); font-weight:700; line-height: 100%; }
-                    span{ margin: 0; padding: 0; color: #404040; font-size: 15px; display: inline-block; margin-top:4px;}
+                    span{ margin: 0; padding: 0; color: #404040; font-size: 15px; display: inline-block; margin-top:4px; font-weight: 300;}
 
                     @media screen and (max-width: 1024px) { width: 100%; margin-bottom: 15px;}
                 }
@@ -176,6 +176,7 @@
                 input[type="url"] {
                     width: 100%;
                   font-size: 16px   ;
+                  font-weight: 400;
                     background: #fff;
                     border: none;
                     border-bottom: 1px solid #000;
@@ -397,7 +398,7 @@
             border: solid 1px #525961;
             padding:3px 3px 3px 20px; 
             outline: none;
-            height: 61px;
+            height: 45px;
             gap: 20px;
             
             input[type="file"] {

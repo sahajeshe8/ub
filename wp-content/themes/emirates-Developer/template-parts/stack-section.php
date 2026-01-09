@@ -15,7 +15,7 @@
 			<div class="crd_block stack-text-block">
 				<div class="global_brands_content_title ">
 					<h3 class="h3_title_55 text_black">
-                    Connecting Industries with <br>Innovation and Quality
+                      Connecting Industries with <br>Innovation and Quality
 					</h3>
 					<a href="<?php echo esc_url( home_url( '/industries' ) ); ?>" class="btn_style me-1 buttion_blue">Explore Industries</a>
 				</div>

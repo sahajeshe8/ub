@@ -26,9 +26,9 @@
 
 }
 
-.menu_right_block{ display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 20px; }
+.menu_right_block{ display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 20px; width: 185px; }
 
-.list-unstyled{ display: flex; flex-wrap:wrap; margin-bottom: 0; padding: 0; width: calc(100% - 182px); margin-top: 0;}
+.list-unstyled{ display: flex; flex-wrap:wrap; margin-bottom: 0; padding: 0; width: calc(100% - 185px); margin-top: 0;}
 
  
 .button_link, .list-unstyled li a { color: #fff; font-size: 16px; font-weight: 300;
