@@ -10,6 +10,7 @@ $product_overview_data = get_query_var( 'product_overview_data', array() );
 
 // Get data from array or use defaults
 $overview_title = isset( $product_overview_data['title'] ) ? $product_overview_data['title'] : 'Overview';
+$overview_title_class = isset( $product_overview_data['title_class'] ) ? $product_overview_data['title_class'] : 'h3_title';
 $overview_description = isset( $product_overview_data['description'] ) ? $product_overview_data['description'] : '';
 $overview_buttons = isset( $product_overview_data['buttons'] ) ? $product_overview_data['buttons'] : array();
 
@@ -24,7 +25,7 @@ if ( is_array( $overview_description ) ) {
 	<div class="wrap">
 		<div class="product_overview_content">
 			<div class="product_overview_title " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
-				<h2 class="h3_title"><?php echo esc_html( $overview_title ); ?></h2>
+				<h2 class="<?php echo esc_attr( $overview_title_class ); ?>"><?php echo esc_html( $overview_title ); ?></h2>
 			</div>
 			<?php if ( ! empty( $overview_description ) ) : ?>
 			<div class="product_overview_description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
