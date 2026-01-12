@@ -59,7 +59,7 @@
 					'name' => 'RAMCRO',
 					'desc' => 'Ramcro , founded in 1979, is a family-owned Italian manufacturer of high-quality special cables...',
 					'image' => get_template_directory_uri() . '/assets/images/brands-02.jpg',
-					'url' => home_url('/brand-ramco'),
+					'url' => home_url('/brand-ramcro'),
 				),
 				array(
 					'name' => '',
@@ -101,6 +101,7 @@
 					'name' => 'MAY',
 					'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
 					'image' => get_template_directory_uri() . '/assets/images/brands-09.jpg',
+					'url' => home_url('/brand-detail'),
 				),
 			);
 			?>

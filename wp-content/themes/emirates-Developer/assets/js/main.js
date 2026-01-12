@@ -127,19 +127,23 @@ var swiper = new Swiper(".swiper_global_brands", {
 	},
   });
 
-  var swiper = new Swiper(".swiper_building_trust", {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-	autoplay: {
-	  delay: 5000,
-	  disableOnInteraction: false,
-	},
-	loop: true,
-  });
+  var buildingTrustSwiper = document.querySelector(".swiper_building_trust");
+  if (buildingTrustSwiper) {
+	var buildingTrustPagination = buildingTrustSwiper.closest(".building_trust_content_inner").querySelector(".swiper-pagination");
+	var swiper = new Swiper(buildingTrustSwiper, {
+	  slidesPerView: 1,
+	  spaceBetween: 0,
+	  pagination: {
+		el: buildingTrustPagination,
+		clickable: true,
+	  },
+	  autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	  },
+	  loop: true,
+	});
+  }
 
   // Building Trust Vertical Card Swiper
   var buildingTrustVerticalSwiper = new Swiper(".building_trust_vertical_swiper", {
@@ -453,7 +457,10 @@ panels.forEach((panel, i) => {
 
 
  
-var swiper = new Swiper(".mySwiper-cards-swiper", {
+var cardsSwiper = document.querySelector(".mySwiper-cards-swiper");
+if (cardsSwiper) {
+  var cardsPagination = cardsSwiper.closest(".building_trust_content_02_inner").querySelector(".swiper-pagination");
+  var swiper = new Swiper(cardsSwiper, {
 	effect: "cards",
 	grabCursor: true,
 	autoplay: {
@@ -470,8 +477,9 @@ var swiper = new Swiper(".mySwiper-cards-swiper", {
 	  perSlideRotate: 0
 	},
 	pagination: {
-	  el: ".mySwiper-cards-swiper .swiper-pagination",
+	  el: cardsPagination,
 	  clickable: true,
+	  type: 'bullets',
 	},
 	breakpoints: {
 	  1366: {
@@ -483,7 +491,8 @@ var swiper = new Swiper(".mySwiper-cards-swiper", {
 	  820: {},
 	  480: {},
 	},
-});
+  });
+}
  
 
 
