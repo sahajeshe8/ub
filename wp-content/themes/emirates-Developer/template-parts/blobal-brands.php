@@ -31,8 +31,8 @@
 							</div>
 
 							<div class="global_logo_box_bottom">
-								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
-								<a href="<?php echo esc_url( home_url( '/brand-detail' ) ); ?>" class="global_buttion">
+								<h3>Interplast is the leading manufacturer of electrical systems in the Middle East...</h3>
+								<a href="<?php echo esc_url( home_url( '/brand-decoduct' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_01.svg" alt="RAMCRO">
 								</a>
 							</div>
@@ -55,8 +55,8 @@
 							</div>
 
 							<div class="global_logo_box_bottom">
-								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
-								<a href="" class="global_buttion">
+								<h3>Ramcro , founded in 1979, is a family-owned Italian manufacturer...</h3>
+								<a href="<?php echo esc_url( home_url( '/brand-ramcro' ) ); ?>" class="global_buttion">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_01.svg" alt="RAMCRO">
 								</a>
 							</div>

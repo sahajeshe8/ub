@@ -3353,6 +3353,16 @@ a,
   opacity: 1;
   visibility: visible;
 }
+@media screen and (max-width: 1024px) {
+  .projects_home_grid li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projects_home_grid li {
+    width: 100%;
+  }
+}
 .projects_home_grid > :nth-child(odd) {
   flex-direction: column-reverse;
 }
@@ -4950,6 +4960,7 @@ a,
 .product_overview_content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .product_overview_content .product_overview_description {
   width: 60%;
@@ -5063,6 +5074,12 @@ a,
 .associated_product_item .pro_detail_block li {
   width: 100%;
   list-style-type: disc;
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .associated_product_item .pro_detail_block li {
+    font-size: 14px;
+  }
 }
 .associated_product_item .pro_img_block {
   width: 100%;
