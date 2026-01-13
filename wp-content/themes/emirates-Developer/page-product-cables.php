@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Category
+ * Template Name: Product Cable
  * 
  * The template for displaying product category pages
  *
@@ -16,7 +16,7 @@ get_header();
 set_query_var( 'inner_banner_image', get_template_directory_uri() . '/assets/images/product-banner.jpg' );
 
 // Optionally set a custom banner title (leave empty to use page title)
-// set_query_var( 'inner_banner_title', 'Product Category Name' );
+set_query_var( 'inner_banner_title', 'Products Catogery' );
 
 get_template_part( 'template-parts/inner-banner' );
 ?>
@@ -53,7 +53,7 @@ $innovative_products_data = array(
 set_query_var( 'innovative_products_data', $innovative_products_data );
 
 ?>
-<?php get_template_part( 'template-parts/products-catogery-list' ); ?>
+<?php get_template_part( 'template-parts/products-catogery-list-cable' ); ?>
 </main><!-- #main -->
 
 <?php

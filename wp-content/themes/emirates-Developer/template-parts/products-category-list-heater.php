@@ -44,11 +44,11 @@
 			$product_items = array(
 				array('img' => 'WATER HEATERS_0008_01.jpg', 'title' => 'Galvanized Iron Water Heater'),
 				array('img' => 'WATER HEATERS_0007_02.jpg', 'title' => 'Glass Lined Water Heater'),
-				array('img' => 'WATER HEATERS_0006_03.jpg', 'title' => 'Glass Lined Water Heaters - HOTWAVE'),
-				array('img' => 'WATER HEATERS_0005_04.jpg', 'title' => 'Galvanized Iron Water Heaters - SUNSTAR'),
-				array('img' => 'WATER HEATERS_0004_05.jpg', 'title' => 'CENTRALIZED WATER HEATER - HOTWAVE'),
-				array('img' => 'WATER HEATERS_0003_06.jpg', 'title' => '1 HP & 0.5 – Water Pump'),
-				array('img' => 'WATER HEATERS_0002_07.jpg', 'title' => '0.5 HP Water Pump'),
+				array('img' => 'WATER HEATERS_0006_03.jpg', 'title' => 'Glass Lined Water Heaters - Hotwave'),
+				array('img' => 'WATER HEATERS_0005_04.jpg', 'title' => 'Galvanized Iron Water Heaters - Sunstar'),
+				array('img' => 'WATER HEATERS_0004_05.jpg', 'title' => 'Centralized Water Heater - Hotwave'),
+				array('img' => 'WATER HEATERS_0003_06.jpg', 'title' => '1 Hp & 0.5 – Water Pump'),
+				array('img' => 'WATER HEATERS_0002_07.jpg', 'title' => '0.5 Hp Water Pump'),
 				array('img' => 'WATER HEATERS_0001_08.jpg', 'title' => 'Automatic Pump Controller'),
 				array('img' => 'WATER HEATERS_0000_09.jpg', 'title' => 'Float Switch'),
 			);

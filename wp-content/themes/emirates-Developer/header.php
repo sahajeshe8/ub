@@ -122,6 +122,11 @@
  <div class="desk_nav_right">
                 <div class="navbar nav_desk">
                     <ul class="list-unstyled">
+					<li class="nav-item">
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">
+                               About us
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo esc_url( home_url( '/brands' ) ); ?>">
                                 Brands

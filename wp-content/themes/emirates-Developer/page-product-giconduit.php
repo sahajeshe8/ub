@@ -16,7 +16,7 @@ get_header();
 set_query_var( 'inner_banner_image', get_template_directory_uri() . '/assets/images/product-banner.jpg' );
 
 // Optionally set a custom banner title (leave empty to use page title)
-set_query_var( 'inner_banner_title', 'Products catogery' );
+set_query_var( 'inner_banner_title', 'Products Catogery' );
 
 get_template_part( 'template-parts/inner-banner' );
 ?>

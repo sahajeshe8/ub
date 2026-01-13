@@ -43,12 +43,12 @@
 			<?php
 			$product_items = array(
 
-                array('img' => 'G I CONDUIT_0007_Layer 1.jpg', 'title' => 'G.I. CONDUIT'),
-                array('img' => 'G I CONDUIT_0006_Layer 2.jpg', 'title' => 'PIPER GI RIGID CONDUITS'),
+                array('img' => 'G I CONDUIT_0007_Layer 1.jpg', 'title' => 'G.I. Conduit'),
+                array('img' => 'G I CONDUIT_0006_Layer 2.jpg', 'title' => 'Piper Gi Rigid Conduits'),
                 array('img' => 'G I CONDUIT_0005_Layer 3.jpg', 'title' => 'Conduit Fittings'),
                 array('img' => 'G I CONDUIT_0004_Layer 4.jpg', 'title' => 'G.I. Flexible Conduit'),
-                array('img' => 'G I CONDUIT_0003_Layer 5.jpg', 'title' => 'GI FLEXIBLE CONDUITS & ACCESSORIES'),
-                array('img' => 'G I CONDUIT_0002_Layer 6.jpg', 'title' => 'G.I. Junctions Box'),
+                array('img' => 'G I CONDUIT_0003_Layer 5.jpg', 'title' => 'Gi Flexible Conduits & Accessories'),
+                array('img' => 'G I CONDUIT_0002_Layer 6.jpg', 'title' => 'G.I. Junction Box'),
                 array('img' => 'G I CONDUIT_0001_Layer 7.jpg', 'title' => 'Switch Box'),
                 array('img' => 'G I CONDUIT_0000_Layer 8.jpg', 'title' => 'Junction Box'),
 			);

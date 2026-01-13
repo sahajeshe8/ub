@@ -19,7 +19,7 @@
 		<ul class="projects_home_grid">
 			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
 				<div class="projects_item_01">
-					<div class="global_logo_box_bottom">
+					<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
@@ -31,7 +31,7 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pro-02.jpg" alt="RAMCRO">
 				</div>
 				<div class="projects_item_01">
-				<div class="global_logo_box_bottom">
+				<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
@@ -46,7 +46,7 @@
 			</li>
 			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-once="true">
 				<div class="projects_item_01">
-				<div class="global_logo_box_bottom">
+				<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
@@ -58,7 +58,7 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pro-03.jpg" alt="RAMCRO">
 				</div>
 				<div class="projects_item_01">
-				<div class="global_logo_box_bottom">
+				<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
@@ -72,7 +72,7 @@
 			</li>
 			<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
 				<div class="projects_item_01">
-				<div class="global_logo_box_bottom">
+				<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
@@ -84,7 +84,7 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pro-06.jpg" alt="RAMCRO">
 				</div>
 				<div class="projects_item_01">
-				<div class="global_logo_box_bottom">
+				<div class="global_logo_box_bottom flex_wrap">
 						<h4>Soba Hartland Green Apartments</h4>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
 						<a href="<?php echo esc_url(home_url('/brand-detail')); ?>" class="global_buttion">
