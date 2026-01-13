@@ -23,7 +23,7 @@ if ( empty( $products ) ) {
 ?>
 
 <section class="pt_80 pb_80 associated_product_section  bg_black bg_shadow">
-    <div class="wrap">
+    <div class="wrap z-index_99">
         <div class="global_brands_content_title pb_30" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
             data-aos-once="true">
             <h3 class="h3_title_55">
@@ -62,13 +62,6 @@ if ( empty( $products ) ) {
                         <?php endif; ?>
                         <?php if ( ! empty( $product_description ) ) : ?>
                         <p><?php echo wp_kses_post( $product_description ); ?></p>
-                        <?php endif; ?>
-                        <?php if ( ! empty( $product_features ) ) : ?>
-                        <ul>
-                            <?php foreach ( $product_features as $feature ) : ?>
-                            <li><?php echo wp_kses_post( $feature ); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
                         <?php endif; ?>
                     </div>
                 </div>

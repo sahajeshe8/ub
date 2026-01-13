@@ -32,8 +32,7 @@
 
                         <p>
                             P.O. Box: 20827<br>
-                            Al Nahda -2,<br>
-                            Dubai,<br>
+                            Al Nahda -2, Dubai,<br>
                             United Arab Emirates<br>
                         </p>
 

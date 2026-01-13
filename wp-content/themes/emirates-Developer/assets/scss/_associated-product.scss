@@ -14,7 +14,7 @@
     .pro_detail_block{
          bottom: 0; left: 0; width: 100%; padding:0% 5% 5% 5%;
          h3{   @include px-rem(30); font-weight: 500; margin: 0; margin-bottom: 5px;}
-         p{ margin: 0;}
+         p{ margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
          ul{padding: 20px 0px 20px 20px; }
          li { width: 100%; list-style-type: disc; font-size: 16px;
         
@@ -24,4 +24,9 @@
         }
     }
     .pro_img_block{ width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding-top: 50px; padding-bottom: 50px;}
+}
+
+.z-index_99 {
+    z-index: 99;
+    position: relative;
 }

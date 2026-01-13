@@ -21,7 +21,7 @@ if ( is_array( $overview_description ) ) {
 
 ?>
 
-<section class="pt_80 pb_80 product_overview_section">
+<section class="pt_80 pb_40 product_overview_section">
 	<div class="wrap">
 		<div class="product_overview_content">
 			<div class="product_overview_title " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">

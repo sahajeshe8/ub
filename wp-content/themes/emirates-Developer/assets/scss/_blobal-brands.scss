@@ -79,13 +79,14 @@
   position: relative;
 }
 
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
 .global_logo_box_bottom {
   align-items: flex-end;
   justify-content: space-between;
   position: absolute;
-  flex-wrap: wrap;
-  bottom: 0;
-  left: 0;
   width: calc(100% - 16%);
   left: 8%;
   bottom: 8%;
@@ -106,10 +107,17 @@
     padding: 13px;
     width: 40px;
     height: 40px;
+    min-width: 40px;
     background: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+    }
+
     img {
       width: 15px;
       transition: transform 0.3s ease;

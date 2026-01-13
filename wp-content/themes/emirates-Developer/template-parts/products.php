@@ -27,7 +27,7 @@ if ( empty( $products_items ) ) {
 			'category' => 'Cables',
 			'title' => 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
 			'image' => get_template_directory_uri() . '/assets/images/innovative_img_01.jpg',
-			'url' => home_url( '/products-catogery' ),
+			'url' => home_url( '/product-cables' ),
 		),
 		array(
 			'category' => 'Lighting',

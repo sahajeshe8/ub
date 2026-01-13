@@ -21,6 +21,23 @@ set_query_var( 'inner_banner_image', get_template_directory_uri() . '/assets/ima
 get_template_part( 'template-parts/inner-banner' );
 ?>
 
+<?php
+// Breadcrumb for Brands page
+$custom_breadcrumb = array(
+	array(
+		'title' => 'Home',
+		'url' => home_url( '/' ),
+	),
+	array(
+		'title' => 'Brands',
+		'url' => get_permalink(),
+	),
+);
+set_query_var( 'breadcrumb_items', $custom_breadcrumb );
+
+get_template_part( 'template-parts/breadcrumb' );
+?>
+
 <?php get_template_part( 'template-parts/explore-brands' ); ?>
 
 </main><!-- #main -->

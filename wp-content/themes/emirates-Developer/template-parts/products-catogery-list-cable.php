@@ -14,7 +14,7 @@
  
 	<div class="product_overview_content mb_30" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-once="true">
 			<div class="product_overview_title">
-				<h2 class="h3_title">CABLE</h2>
+				<h2 class="h3_title">Cable & Cable Accessories</h2>
 
 				<div>
 				
@@ -25,6 +25,7 @@
 						<span class="filter_by_label">Filters by:</span>  
 						
 						<select name="" id="" class="filter_select">
+						<option disabled selected value="">Product Categories</option>
 						<option value="">1</option>
 						<option value="">2</option>
 						<option value="">3</option>
@@ -49,8 +50,8 @@
 				array('img' => 'pro_0038_cp-5.jpg', 'title' => 'Low Voltage Cables'),
 				array('img' => 'pro_0037_cp-6.jpg', 'title' => 'Wires'),
 				array('img' => 'pro_0036_cp-7.jpg', 'title' => 'Control Cables'),
-				array('img' => 'pro_0035_cp-8.jpg', 'title' => 'Low Voltage Power Cables(MESC)'),
-				array('img' => 'pro_0034_Layer 1.jpg', 'title' => 'Single Core Cable/ Building Wire'),
+				array('img' => 'pro_0035_cp-8.jpg', 'title' => 'Low Voltage Power Cables (Mesc)'),
+				array('img' => 'pro_0034_Layer 1.jpg', 'title' => 'Single Core Cable / Building Wire'),
 				array('img' => 'pro_0033_cp-10.jpg', 'title' => 'Flexible Cable'),
 				array('img' => 'pro_0032_cp-11.jpg', 'title' => 'Single Core Cable'),
 				array('img' => 'pro_0031_cp-12.jpg', 'title' => 'Low Voltage Power Cables'),
@@ -58,33 +59,33 @@
 				array('img' => 'pro_0029_cp-14.jpg', 'title' => 'Multi Core'),
 				array('img' => 'pro_0028_cp-15.jpg', 'title' => 'Panel Cables'),
 				array('img' => 'pro_0027_cp-16.jpg', 'title' => 'Rubber Cables'),
-				array('img' => 'pro_0026_cp-17.jpg', 'title' => 'PVC FLEXIBLE CABLE HO5VV-F'),
-                array('img' => 'pro_0025_cp-18.jpg', 'title' => 'CAT-6 Cable'),
+				array('img' => 'pro_0026_cp-17.jpg', 'title' => 'Pvc Flexible Cable Ho5vv-F'),
+                array('img' => 'pro_0025_cp-18.jpg', 'title' => 'Cat-6 Cable'),
                 array('img' => 'pro_0024_cp-19.jpg', 'title' => 'Cable Lugs'),
-				array('img' => 'pro_0023_cp-20.jpg', 'title' => 'Cable Lugs - BI Metal'),
-                array('img' => 'pro_0022_cp-21.jpg', 'title' => 'CW BRASS CABLE GLANDS'),
-                array('img' => 'pro_0021_cp-22.jpg', 'title' => 'Cable Glands-BW Brass'),
-                array('img' => 'pro_0020_cp-23.jpg', 'title' => 'Cable Glands-A1 A2'),
-                array('img' => 'pro_0019_cp-24.jpg', 'title' => 'E1W Gland FOR SWA CABLE'),
-                array('img' => 'pro_0018_cp-25.jpg', 'title' => 'CABLE GLANDS'),
-                array('img' => 'pro_0017_cp-26.jpg', 'title' => 'CABLELUGS & CONNECTION'),
-                array('img' => 'pro_0016_cp-27.jpg', 'title' => 'CABLE CLIPS - ROUND'),
-				array('img' => 'pro_0015_cp-28.jpg', 'title' => 'CABLE TIE'),
-				array('img' => 'pro_0014_cp-29.jpg', 'title' => 'SELF ADHESIVE MOUNTS'),
-				array('img' => 'pro_0013_cp-30.jpg', 'title' => 'GROMMET-OPEN & CLOSE'),
-				array('img' => 'pro_0012_cp-31.jpg', 'title' => 'EDGING GROMMET'),
-				array('img' => 'pro_0011_cp-32.jpg', 'title' => 'HEAT SHRINK'),
-				array('img' => 'pro_0010_cp-33.jpg', 'title' => 'SPIRAL BINDING'),
-				array('img' => 'pro_0009_cp-34.jpg', 'title' => 'CORD END TERMINALS'),
-				array('img' => 'pro_0008_cp-35.jpg', 'title' => 'SPADE(FORK) TERMINALS'),
-				array('img' => 'pro_0007_cp-36.jpg', 'title' => 'RING TERMINALS'),
-				array('img' => 'pro_0006_cp-37.jpg', 'title' => 'PG GLANDS'),
-				array('img' => 'pro_0005_cp-38.jpg', 'title' => 'SUPREME METRIC GLAND- IP68'),
-				array('img' => 'pro_0004_cp-39.jpg', 'title' => 'SUPREME PG GLAND - IP68'),
-				array('img' => 'pro_0003_cp-40.jpg', 'title' => 'SPLIT FLEXIBLE COUNDUITS'),
-				array('img' => 'pro_0002_cp-41.jpg', 'title' => 'GM CABLE MARKER'),
-				array('img' => 'pro_0001_cp-42.jpg', 'title' => 'MARKER STRIPS'),
-				array('img' => 'pro_0000_cp-43.jpg', 'title' => 'BM CABLR MARKER'),
+				array('img' => 'pro_0023_cp-20.jpg', 'title' => 'Cable Lugs - Bi Metal'),
+                array('img' => 'pro_0022_cp-21.jpg', 'title' => 'Cw Brass Cable Glands'),
+                array('img' => 'pro_0021_cp-22.jpg', 'title' => 'Cable Glands - Bw Brass'),
+                array('img' => 'pro_0020_cp-23.jpg', 'title' => 'Cable Glands - A1 A2'),
+                array('img' => 'pro_0019_cp-24.jpg', 'title' => 'E1w Gland For Swa Cable'),
+                array('img' => 'pro_0018_cp-25.jpg', 'title' => 'Cable Glands'),
+                array('img' => 'pro_0017_cp-26.jpg', 'title' => 'Cablelugs & Connection'),
+                array('img' => 'pro_0016_cp-27.jpg', 'title' => 'Cable Clips - Round'),
+				array('img' => 'pro_0015_cp-28.jpg', 'title' => 'Cable Tie'),
+				array('img' => 'pro_0014_cp-29.jpg', 'title' => 'Self Adhesive Mounts'),
+				array('img' => 'pro_0013_cp-30.jpg', 'title' => 'Grommet-Open & Close'),
+				array('img' => 'pro_0012_cp-31.jpg', 'title' => 'Edging Grommet'),
+				array('img' => 'pro_0011_cp-32.jpg', 'title' => 'Heat Shrink'),
+				array('img' => 'pro_0010_cp-33.jpg', 'title' => 'Spiral Binding'),
+				array('img' => 'pro_0009_cp-34.jpg', 'title' => 'Cord End Terminals'),
+				array('img' => 'pro_0008_cp-35.jpg', 'title' => 'Spade(Fork) Terminals'),
+				array('img' => 'pro_0007_cp-36.jpg', 'title' => 'Ring Terminals'),
+				array('img' => 'pro_0006_cp-37.jpg', 'title' => 'Pg Glands'),
+				array('img' => 'pro_0005_cp-38.jpg', 'title' => 'Supreme Metric Gland - Ip68'),
+				array('img' => 'pro_0004_cp-39.jpg', 'title' => 'Supreme Pg Gland - Ip68'),
+				array('img' => 'pro_0003_cp-40.jpg', 'title' => 'Split Flexible Counduits'),
+				array('img' => 'pro_0002_cp-41.jpg', 'title' => 'Gm Cable Marker'),
+				array('img' => 'pro_0001_cp-42.jpg', 'title' => 'Marker Strips'),
+				array('img' => 'pro_0000_cp-43.jpg', 'title' => 'Bm Cablr Marker'),
 			);
 			$delay = 200;
 			foreach ($product_items as $index => $item) :
